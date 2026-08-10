@@ -20,5 +20,13 @@ export default defineType({
 	  title: 'Bio',
       type: 'text',
     }),
+	defineField({
+	  name: 'photo',
+	  title: 'Photo',
+	  type: 'image',
+	  options: {
+		hotspot: true,
+	  }
+	}),
   ],
 })
