@@ -9,10 +9,11 @@ export const metadata = {
 const capabilities = [
   {
     title: "Program Management",
-    description:
+    description: [
 	   "Project Management & Records Information Management Supply",
 	   "Implementation & Support",
 	   "CTP Reg compliance",
+	]
   },
   {
     title: "Research & Development",
