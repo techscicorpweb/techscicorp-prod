@@ -22,6 +22,7 @@ const capabilities = [
       "VTC Services and Project Management", 
       "AMX/Crestron Programming and Integration", 
       "Maintenance and End User training",
+	  "Past Projects: DISA, Special Operations Command (Pentagon), Department of Justice, National Institute of Health, Fairfax County, VA, Maryland Casinos",
     ],
   },
   {
