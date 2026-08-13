@@ -18,7 +18,10 @@ const capabilities = [
   {
     title: "Unified Communications, Audio Visual (AV) & Video Teleconference (VTC)",
     description: [
-      "Innovative research efforts that transform emerging technologies into operational capabilities.",
+	  "AV Design and Installation",
+      "VTC Services and Project Management", 
+      "AMX/Crestron Programming and Integration", 
+      "Maintenance and End User training",
     ],
   },
   {
