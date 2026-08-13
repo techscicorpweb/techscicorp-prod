@@ -10,40 +10,35 @@ const capabilities = [
   {
     title: "Program Management",
     description: [
-      "Project Management & Records Information Management Supply",
-      "Implementation & Support",
-      "CTP Reg compliance",
-    ],
+	   "Project Management & Records Information Management Supply",
+	   "Implementation & Support",
+	   "CTP Reg compliance",
+	]
   },
   {
     title: "Research & Development",
-    description: [
+    description:
       "Innovative research efforts that transform emerging technologies into operational capabilities.",
-    ],
   },
   {
     title: "Test & Evaluation",
-    description: [
+    description:
       "Comprehensive testing and performance validation to ensure mission success.",
-    ],
   },
   {
     title: "Modeling & Simulation",
-    description: [
+    description:
       "Advanced analytical tools and simulation environments for decision support and system development.",
-    ],
   },
   {
     title: "Cyber & Information Systems",
-    description: [
+    description:
       "Secure and resilient information systems designed for critical missions.",
-    ],
   },
   {
     title: "Program Support",
-    description: [
+    description:
       "Technical, management, and operational support tailored to government and commercial customers.",
-    ],
   },
 ];
 
@@ -73,11 +68,7 @@ export default function CapabilitiesPage() {
                 <h2 className="text-2xl font-semibold mb-4">
                   {capability.title}
                 </h2>
-                <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  {capability.description.map((line, index) => (
-                    <li key={index}>{line}</li>
-                  ))}
-                </ul>
+                <p className="text-gray-600">{capability.description}</p>
               </div>
             ))}
           </div>
