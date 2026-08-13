@@ -10,15 +10,9 @@ const capabilities = [
   {
     title: "Program Management",
     description:
-	 <li>
 	   "Project Management & Records Information Management
-	 </li>
-	 <li>
 	   Supply, Implementation & Support
-​     </li>
-     <li>
 	   CTP Reg compliance",
-	 </li>
   },
   {
     title: "Research & Development",
