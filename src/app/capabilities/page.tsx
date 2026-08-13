@@ -70,7 +70,7 @@ export default function CapabilitiesPage() {
                 key={capability.title}
                 className="border rounded-lg p-8 shadow-sm hover:shadow-lg transition"
               >
-                <h2 className="text-2xl font-semibold mb-4">
+                <h2 className="text-2xl font-semibold mb-4 text-black">
                   {capability.title}
                 </h2>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
