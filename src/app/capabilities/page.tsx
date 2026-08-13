@@ -8,9 +8,11 @@ export const metadata = {
 
 const capabilities = [
   {
-    title: "Systems Engineering",
+    title: "Program Management",
     description:
+	  <li>
       "End-to-end systems engineering support for complex defense, aerospace, and government programs.",
+	  </li>
   },
   {
     title: "Research & Development",
