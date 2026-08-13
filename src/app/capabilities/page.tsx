@@ -16,7 +16,7 @@ const capabilities = [
     ],
   },
   {
-    title: "Research & Development",
+    title: "Unified Communications, Audio Visual (AV) & Video Teleconference (VTC)",
     description: [
       "Innovative research efforts that transform emerging technologies into operational capabilities.",
     ],
