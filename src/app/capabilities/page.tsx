@@ -13,6 +13,7 @@ const capabilities = [
       "Project Management & Records Information Management Supply",
       "Implementation & Support",
       "CTP Reg compliance",
+	  "Past Projects: Defense Health Agency, Customs & Border Protection, Navy, Veterans Affairs, Food & Drug Administration",
     ],
   },
   {
