@@ -13,7 +13,7 @@ export default defineType({
 	defineField({
       name: 'description',
 	  title: 'Job Description',
-      type: 'text',
+      type: 'text', 
 	}),
 	defineField({
       name: 'location',
