@@ -27,7 +27,11 @@ const capabilities = [
   {
     title: "Enterprise Services",
     description: [
-      "Comprehensive testing and performance validation to ensure mission success.",
+	  "Enterprise Network Operations",
+	  "Network Security",
+	  "Data Center Operations",
+	  "Change Management",
+	  "Continuous Monitoring",
     ],
   },
   {
