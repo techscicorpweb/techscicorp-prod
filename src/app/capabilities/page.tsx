@@ -32,6 +32,11 @@ const capabilities = [
 	  "Data Center Operations",
 	  "Change Management",
 	  "Continuous Monitoring",
+	  "Network and Cyber Security",
+	  "Intrusion analysis",
+	  "Security Accreditation & Infrastructure Management",
+	  "Vulnerability Management",
+	  
     ],
   },
   {
