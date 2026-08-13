@@ -10,9 +10,15 @@ const capabilities = [
   {
     title: "Program Management",
     description:
-	  <li>
-      "End-to-end systems engineering support for complex defense, aerospace, and government programs.",
-	  </li>
+	 <li>
+	   "Project Management & Records Information Management"
+	 </li>
+	 <li>
+	   "Supply, Implementation & Support"
+​     </li>
+     <li>
+	   "CTP Reg compliance",
+	 </li>
   },
   {
     title: "Research & Development",
