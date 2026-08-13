@@ -11,13 +11,13 @@ const capabilities = [
     title: "Program Management",
     description:
 	 <li>
-	   "Project Management & Records Information Management"
+	   "Project Management & Records Information Management
 	 </li>
 	 <li>
-	   "Supply, Implementation & Support"
+	   Supply, Implementation & Support
 ​     </li>
      <li>
-	   "CTP Reg compliance",
+	   CTP Reg compliance",
 	 </li>
   },
   {
