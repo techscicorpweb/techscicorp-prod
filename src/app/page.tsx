@@ -19,8 +19,8 @@ export default function Home() {
               page.tsx
             </code>{" "}
             file.
+		  </h1>
 			We specialize in program management, audiovisual/video-teleconference services, and enterprise network and security services. Through our extensive experience and background, we provide top-quality customer service and post-award operations by encouraging and promoting a culture of creative problem-solving and responsiveness in search of high-quality, lower-cost process improvement. We listen, customize the solution, and perform with integrity. Our values include the importance of collaboration to produce a winning solution.
-          </h1>
           <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
             Looking for a starting point or more instructions? Head over to{" "}
             <a
