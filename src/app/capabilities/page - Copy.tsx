@@ -1,11 +1,9 @@
 import Link from "next/link";
-
 export const metadata = {
   title: "Capabilities | Technology Science Corporation",
   description:
     "Technology Science Corporation provides advanced engineering, scientific research, systems integration, and mission support solutions.",
 };
-
 const capabilities = [
   {
     title: "Program Management",
@@ -51,7 +49,6 @@ const capabilities = [
     ],
   },
 ];
-
 export default function CapabilitiesPage() {
   return (
     <main>
@@ -65,7 +62,6 @@ export default function CapabilitiesPage() {
           </p>
         </div>
       </section>
-
       {/* Capability Cards */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
@@ -79,16 +75,24 @@ export default function CapabilitiesPage() {
                   {capability.title}
                 </h2>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  {capability.description.map((line, index) => (
-                    <li key={index}>{line}</li>
-                  ))}
+                  {capability.description.map((line, index) => {
+                    if (line.startsWith("Past Projects:")) {
+                      const rest = line.replace("Past Projects:", "");
+                      return (
+                        <li key={index}>
+                          <span className="underline">Past Projects:</span>
+                          {rest}
+                        </li>
+                      );
+                    }
+                    return <li key={index}>{line}</li>;
+                  })}
                 </ul>
               </div>
             ))}
           </div>
         </div>
       </section>
-
       {/* CTA */}
       <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-6 max-w-4xl text-center">
