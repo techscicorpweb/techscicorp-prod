@@ -10,35 +10,45 @@ const capabilities = [
   {
     title: "Program Management",
     description: [
-	   "Project Management & Records Information Management Supply",
-	   "Implementation & Support",
-	   "CTP Reg compliance",
-	]
+      "Project Management & Records Information Management Supply",
+      "Implementation & Support",
+      "CTP Reg compliance",
+	  "Past Projects: Defense Health Agency, Customs & Border Protection, Navy, Veterans Affairs, Food & Drug Administration",
+    ],
   },
   {
-    title: "Research & Development",
-    description:
-      "Innovative research efforts that transform emerging technologies into operational capabilities.",
+    title: "Unified Communications, Audio Visual (AV) & Video Teleconference (VTC)",
+    description: [
+	  "AV Design and Installation",
+      "VTC Services and Project Management", 
+      "AMX/Crestron Programming and Integration", 
+      "Maintenance and End User training",
+	  "Past Projects: DISA, Special Operations Command (Pentagon), Department of Justice, National Institute of Health, Fairfax County, VA, Maryland Casinos",
+    ],
   },
   {
     title: "Test & Evaluation",
-    description:
+    description: [
       "Comprehensive testing and performance validation to ensure mission success.",
+    ],
   },
   {
     title: "Modeling & Simulation",
-    description:
+    description: [
       "Advanced analytical tools and simulation environments for decision support and system development.",
+    ],
   },
   {
     title: "Cyber & Information Systems",
-    description:
+    description: [
       "Secure and resilient information systems designed for critical missions.",
+    ],
   },
   {
     title: "Program Support",
-    description:
+    description: [
       "Technical, management, and operational support tailored to government and commercial customers.",
+    ],
   },
 ];
 
@@ -65,10 +75,14 @@ export default function CapabilitiesPage() {
                 key={capability.title}
                 className="border rounded-lg p-8 shadow-sm hover:shadow-lg transition"
               >
-                <h2 className="text-2xl font-semibold mb-4">
+                <h2 className="text-2xl font-semibold mb-4 text-black">
                   {capability.title}
                 </h2>
-                <p className="text-gray-600">{capability.description}</p>
+                <ul className="list-disc list-inside text-gray-600 space-y-1">
+                  {capability.description.map((line, index) => (
+                    <li key={index}>{line}</li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
