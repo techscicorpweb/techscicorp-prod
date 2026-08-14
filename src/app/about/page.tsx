@@ -109,7 +109,6 @@ export default function AboutPage() {
 					  rel="noopener noreferrer"
 					  className="underline text-blue-300 hover:text-blue-200"
 					  {item.text}
-				  </a>
 				 </li>
 			  );
 			}
