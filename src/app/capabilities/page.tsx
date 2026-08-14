@@ -55,19 +55,21 @@ const capabilities = [
   {
     title: "Global Product Warranty and Maintenance",
     description: [
-      "Advanced analytical tools and simulation environments for decision support and system development.",
+      "Break/Fix Services - hardware system repairs, installations and upgrades across networking platforms",
+      "Help Desk: 24/7/365 CONUS/OCONUS; Centralized Trouble-Shooting Dispatch",
+      "Incident Management & Escalation Tracking",
+      "Maintains a 99% SLA attainment across all contracts and continuous improvement",
     ],
   },
   {
-    title: "Cyber & Information Systems",
+    title: "Managed Print Services",
     description: [
-      "Secure and resilient information systems designed for critical missions.",
-    ],
-  },
-  {
-    title: "Program Support",
-    description: [
-      "Technical, management, and operational support tailored to government and commercial customers.",
+      "Manage consumable acquisition",
+      "Identify potential constraints for better capacity and availability",
+      "Managing spend throughout the product lifecycle",
+      "Multivendor CAC Deployment and integration",
+      "Asset Management & HW Maintenance",
+      "​Printer utilization and Reporting",
     ],
   },
 ];
