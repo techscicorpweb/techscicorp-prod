@@ -5,6 +5,14 @@ const marqueeImages = [
   { src: "/marq-CBP-logo.png", name: "US Customs and Border Protection" },
   { src: "/marq-USNavy-logo.png", name: "US Navy" },
   { src: "/marq-NIH-logo.png", name: "National Institutes of Health" },
+  { src: "/marq-FBI-logo.png", name: "FBI" },
+  { src: "/marq-FTC-logo.png", name: "FTC" },
+  { src: "/marq-USSOC-logo.png", name: "US Special Operations Command" },
+  { src: "/marq-FDA-logo.png", name: "FDA" },
+  { src: "/marq-DISA-logo.png", name: "DISA" },
+  { src: "/marq-PentagonFPA-logo.png", name: "Pentagon Force Protection Agency" },
+  { src: "/marq-FairfaxCo-logo.png", name: "Fairfax County, VA" },
+  { src: "/marq-MDGaming-logo.webp", name: "Maryland Gaming Commission" },
 ];
 
 export default function ImageMarquee() {
