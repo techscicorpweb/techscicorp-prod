@@ -28,7 +28,7 @@ export default function ImageMarquee() {
       <div className="marquee-container overflow-hidden">
         <div className="flex w-max animate-marquee gap-2">
           {images.map((item, i) => (
-            <div key={i} className="flex flex-col items-center justify-center shrink-0 h-28 w-56">
+            <div key={i} className="flex flex-col items-center justify-center shrink-0 h-40 w-56">
               <Image
                 src={item.src}
                 alt={item.name}
@@ -36,7 +36,7 @@ export default function ImageMarquee() {
                 height={112}
                 className="object-contain max-h-28 w-auto"
               />
-              <p className="text-sm text-gray-500 mt-2 text-center">{item.name}</p>
+              <p className="text-sm text-gray-500 mt-2 text-center leading-tight">{item.name}</p>
             </div>
           ))}
         </div>
