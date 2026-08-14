@@ -37,7 +37,7 @@ const capabilities = [
 	  "Security Accreditation & Infrastructure Management",
 	  "Vulnerability Management",
 	  "Past Projects:",
-      "DISA"
+      "DISA",
       "Veterans Affairs",
       "Baltimore Data Center",
     ],
