@@ -16,7 +16,7 @@ export default function ImageMarquee() {
 
   return (
     <div className="marquee-container overflow-hidden bg-white py-10 border-t">
-      <div className="flex w-max animate-marquee gap-4">
+      <div className="flex w-max animate-marquee gap-2">
         {images.map((src, i) => (
           <div key={i} className="flex items-center justify-center shrink-0 h-20 w-40">
             <Image
@@ -24,7 +24,7 @@ export default function ImageMarquee() {
               alt=""
               width={160}
               height={80}
-              className="object-contain max-h-20 w-auto"
+              className="object-contain max-h-20 w-24"
             />
           </div>
         ))}
