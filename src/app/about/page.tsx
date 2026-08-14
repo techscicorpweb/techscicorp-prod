@@ -40,8 +40,8 @@ export default function AboutPage() {
 	"Unique Entity ID (UEI): MUVEWBGLVKV9",
 	"DUNS: 005824619",
 	"CAGE Code: 5FVF7",
-	"GSA MAS: GS-35F-445GA",
-	" View/Download Schedule",
+	"<a href="https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES>GSA MAS: GS-35F-445GA</a>",
+	"View/Download Schedule",
 	"ISO Certified (2025): 9001:2015 & 14001:2015",
 	"MWAA LDBE #: LD2014-0043-2017",
   ];
