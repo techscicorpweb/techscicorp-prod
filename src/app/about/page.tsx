@@ -104,7 +104,7 @@ export default async function AboutPage() {
                 <div key={leader._id} className="flex flex-col md:flex-row gap-8 items-start">
                   {leader.photo && (
                     <Image
-                      src={urlFor(leader.photo).width(400).height(400).url()}
+                      src={urlFor(leader.photo).width(400).url()}
                       alt={leader.name}
                       width={220}
                       height={220}
