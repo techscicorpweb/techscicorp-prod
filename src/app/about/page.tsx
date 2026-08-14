@@ -10,12 +10,22 @@ export default function AboutPage() {
     "Contract Partnerships: ITES-3H & 3S, NASA SEWP V",
   ];
 
+  const businessCategory = [
+    "SBA Certified 8(a) Small Disadvantaged Business (SDB)",
+	"Verified Service-Disabled Veteran-Owned Small Business (SDVOSB)",
+	"Economically Disadvantaged Women-Owned Small Business (EDWOSB)",
+	"Minority Owned Small Business",
+	"Small Disadvantage Business (SDB)",
+	"Local Disadvantaged Business Enterprise (LDBE) (May 2023)",
+	"8(a) Sole Source Pool",
+  ];
+
   return (
     <main>
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-4xl font-bold mb-6">
             About Technology Science Corporation
           </h1>
           <p className="text-lg">
@@ -34,6 +44,15 @@ export default function AboutPage() {
           </h2>
           <ul className="list-disc list-inside space-y-1">
             {corporateProfile.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+
+          <h2 className="text-2xl font-semibold mt-10 mb-4">
+            Business Category
+          </h2>
+          <ul className="list-disc list-inside space-y-1">
+            {businessCategory.map((item, index) => (
               <li key={index}>{item}</li>
             ))}
           </ul>

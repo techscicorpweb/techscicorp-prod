@@ -1,6 +1,6 @@
 import Link from "next/link";
 export const metadata = {
-  title: "Capabilities | Technology Science Corporation",
+  title: "Contracts | Technology Science Corporation",
   description:
     "Technology Science Corporation provides advanced engineering, scientific research, systems integration, and mission support solutions.",
 };
