@@ -76,7 +76,7 @@ export default function Footer() {
 
             <div className="space-y-2 text-slate-300">
               <p>Technology Science Corporation</p>
-              <p>Arlington, VA</p>
+              <p>Reston, VA</p>
 
               <p>
                 <a
@@ -89,10 +89,10 @@ export default function Footer() {
 
               <p>
                 <a
-                  href="tel:+1703-555-1234"
+                  href="tel:+1800-224-3137"
                   className="hover:text-white transition"
                 >
-                  (703) 555-1234
+                  (800) 224-3137
                 </a>
               </p>
             </div>
