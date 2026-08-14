@@ -11,7 +11,11 @@ const capabilities = [
       "Project Management & Records Information Management Supply",
       "Implementation & Support",
       "CTP Reg compliance",
-	  "Past Projects: Defense Health Agency, Customs & Border Protection, Navy, Veterans Affairs, Food & Drug Administration",
+	  "Past Projects",
+	  "Defense Health Agency",
+	  "Customs & Border Protection",
+	  "Navy, Veterans Affairs", 
+	  "Food & Drug Administration",
     ],
   },
   {
@@ -21,31 +25,51 @@ const capabilities = [
       "VTC Services and Project Management", 
       "AMX/Crestron Programming and Integration", 
       "Maintenance and End User training",
-	  "Past Projects: DISA, Special Operations Command (Pentagon), Department of Justice, National Institute of Health, Fairfax County, VA, Maryland Casinos",
+	  "Past Projects",
+	  "DISA", 
+	  "Special Operations Command (Pentagon)", 
+	  "Department of Justice", 
+	  "National Institute of Health", 
+	  "Fairfax County, VA", 
+	  "Maryland Casinos",
     ],
   },
   {
-    title: "Test & Evaluation",
+    title: "Enterprise Services",
     description: [
-      "Comprehensive testing and performance validation to ensure mission success.",
+	  "Enterprise Network Operations",
+	  "Network Security",
+	  "Data Center Operations",
+	  "Change Management",
+	  "Continuous Monitoring",
+	  "Network and Cyber Security",
+	  "Intrusion analysis",
+	  "Security Accreditation & Infrastructure Management",
+	  "Vulnerability Management",
+	  "Past Projects",
+      "DISA",
+      "Veterans Affairs",
+      "Baltimore Data Center",
     ],
   },
   {
-    title: "Modeling & Simulation",
+    title: "Global Product Warranty and Maintenance",
     description: [
-      "Advanced analytical tools and simulation environments for decision support and system development.",
+      "Break/Fix Services - hardware system repairs, installations and upgrades across networking platforms",
+      "Help Desk: 24/7/365 CONUS/OCONUS; Centralized Trouble-Shooting Dispatch",
+      "Incident Management & Escalation Tracking",
+      "Maintains a 99% SLA attainment across all contracts and continuous improvement",
     ],
   },
   {
-    title: "Cyber & Information Systems",
+    title: "Managed Print Services",
     description: [
-      "Secure and resilient information systems designed for critical missions.",
-    ],
-  },
-  {
-    title: "Program Support",
-    description: [
-      "Technical, management, and operational support tailored to government and commercial customers.",
+      "Manage consumable acquisition",
+      "Identify potential constraints for better capacity and availability",
+      "Managing spend throughout the product lifecycle",
+      "Multivendor CAC Deployment and integration",
+      "Asset Management & HW Maintenance",
+      "​Printer utilization and Reporting",
     ],
   },
 ];
@@ -75,18 +99,18 @@ export default function CapabilitiesPage() {
                   {capability.title}
                 </h2>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-                  {capability.description.map((line, index) => {
-                    if (line.startsWith("Past Projects:")) {
-                      const rest = line.replace("Past Projects:", "");
-                      return (
-                        <li key={index}>
-                          <span className="underline">Past Projects:</span>
-                          {rest}
-                        </li>
-                      );
-                    }
-                    return <li key={index}>{line}</li>;
-                  })}
+				    {capability.description.map((line, index) => {
+					  if (line.startsWith("Past Projects")) {
+						const rest = line.replace("Past Projects", "");
+						return (
+						<li key={index} className="mt-4 list-none">
+						  <span className="underline">Past Projects</span>
+						  {rest}
+						</li>
+					   );
+					}
+					return <li key={index}>{line}</li>;
+				  })}
                 </ul>
               </div>
             ))}

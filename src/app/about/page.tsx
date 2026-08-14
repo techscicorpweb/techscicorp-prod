@@ -16,6 +16,9 @@ export default function AboutPage() {
       <h2 className="text-2xl font-semibold mt-10 mb-4">
         Leadership
       </h2>
+	  <h2 className="text-2xl font-semibold mt-10 mb-4">
+        Corporate Profile
+	  </h2>
     </main>
   );
 }
