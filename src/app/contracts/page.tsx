@@ -76,19 +76,20 @@ export default function ContractsPage() {
             >
               {/* Left: text content */}
               <div className="md:col-span-2">
-				<h2 className="text-2xl font-semibold mb-1 text-black">
+                <h2 className="text-2xl font-semibold mb-1 text-black">
                   {contract.linkHref ? (
-				      href={contract.linkHref}
+				  <a
+                      href={contract.linkHref}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline decoration-2 underline-offset-2 hover:text-blue-700 transition"
-			>
-				{contract.title}
-				</a>
-				) : (
-				contract.title
-			)}
-				</h2>
+                   >
+                  {contract.title}
+                </a>
+                ) : (
+                contract.title
+            )}
+                </h2>
                 <p className="italic text-gray-500 mb-3">{contract.period}</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
                   {contract.details.map((line, i) => (
