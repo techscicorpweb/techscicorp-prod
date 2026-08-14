@@ -20,6 +20,16 @@ export default function AboutPage() {
 	      <h2 className="text-2xl font-semibold mt-10 mb-4">
            Corporate Profile
 	      </h2>
+		    SBA Certified 8(a), SDVOSB, EDWOSB
+            ISO: 9001:2015 | 14001:2015
+			GSA MAS:  GS-35F-445GA
+			GSA MAS: 47QTCA25D007G (TSC-ITG2 JV)
+			GSA STARS III:  47QTCB22D0521  (TSC-ITG JV)
+			GSA OASIS+
+			SB: 47QRCA25DSF73 SDVOSB: 47QRCA25DV098, WOSB: 47QRCA25DW137 8(a) 47QRCA25DA390
+            (TSC-SPTRM-JV)
+			Contract Partnerships:
+			ITES-3H &3S, NASA SEWP V 
 	    </div>
       </section>
 	</main>
