@@ -36,6 +36,16 @@ export default function AboutPage() {
 	"611620 –  Sports and Recreation Instruction",
   ];
 
+  const Misc = [
+	"Unique Entity ID (UEI): MUVEWBGLVKV9",
+	"DUNS: 005824619",
+	"CAGE Code: 5FVF7",
+	"GSA MAS: GS-35F-445GA",
+	" View/Download Schedule",
+	"ISO Certified (2025): 9001:2015 & 14001:2015",
+	"MWAA LDBE #: LD2014-0043-2017",
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -81,6 +91,18 @@ export default function AboutPage() {
               <li key={index}>{item}</li>
             ))}
           </ul>
+		  
+		  <h2 className="text-2xl font-semibold mt-10 mb-4">
+            Other
+          </h2>
+          <ul className="list-disc list-inside space-y-1">
+            {Misc.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+		  
+		  
+		  
 		  
         </div>
       </section>
