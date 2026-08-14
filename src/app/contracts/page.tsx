@@ -3,7 +3,6 @@ import Image from "next/image";
 const contracts = [
   {
     title: "GSA MAS: GS-35F-445GA",
-    linkText: "View/Download Schedule",
     linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
     period: "Contract Period: June 2, 2017 – June 1, 2027",
     details: [
@@ -77,21 +76,19 @@ export default function ContractsPage() {
             >
               {/* Left: text content */}
               <div className="md:col-span-2">
-                <h2 className="text-2xl font-semibold mb-1 text-black">
-                  {contract.title}
-                  {contract.linkHref && (
-                    <>
-                      {" "}
-					  <a
-                        href={contract.linkHref}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="underline text-blue-700 hover:text-blue-500 text-lg">
-                        {contract.linkText}
-                      </a>
-                    </>
-                  )}
-                </h2>
+				<h2 className="text-2xl font-semibold mb-1 text-black">
+                  {contract.linkHref ? (
+				      href={contract.linkHref}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-2 underline-offset-2 hover:text-blue-700 transition"
+			>
+				{contract.title}
+				</a>
+				) : (
+				contract.title
+			)}
+				</h2>
                 <p className="italic text-gray-500 mb-3">{contract.period}</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
                   {contract.details.map((line, i) => (
