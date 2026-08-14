@@ -40,7 +40,10 @@ export default function AboutPage() {
 	"Unique Entity ID (UEI): MUVEWBGLVKV9",
 	"DUNS: 005824619",
 	"CAGE Code: 5FVF7",
-	"<a href="https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES>GSA MAS: GS-35F-445GA</a>",
+	{
+    text: "GSA MAS: GS-35F-445GA",
+    href: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
+    },
 	"View/Download Schedule",
 	"ISO Certified (2025): 9001:2015 & 14001:2015",
 	"MWAA LDBE #: LD2014-0043-2017",
@@ -95,15 +98,25 @@ export default function AboutPage() {
 		  <h2 className="text-2xl font-semibold mt-10 mb-4">
             Other
           </h2>
-          <ul className="list-disc list-inside space-y-1">
-            {Misc.map((item, index) => (
-              <li key={index}>{item}</li>
-            ))}
-          </ul>
-		  
-		  
-		  
-		  
+		  <ul className="list-disc list-inside space-y-1">
+		    {Misc.map((item, index) => {
+		  	  if (typeof item === "object") {
+			    return (
+				  <li key={index}>
+				  
+					  href={item.href}
+					  target="_blank"
+					  rel="noopener noreferrer"
+					  className="underline text-blue-300 hover:text-blue-200"
+				  >
+					  {item.text}
+				  </a>
+				</li>
+			  );
+			}
+			return <li key={index}>{item}</li>;
+		  })}
+		</ul>
         </div>
       </section>
     </main>
