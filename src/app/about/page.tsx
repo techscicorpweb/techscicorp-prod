@@ -26,7 +26,7 @@ async function getLeadership(): Promise<Leader[]> {
     }`
   );
 
-  const order = ["Thu Stubbs", "Jim Terwilliger", "Dwyane Thomas, CPA"];
+  const order = ["Thu Stubbs", "Jim Terwilliger", "Dwayne Thomas, CPA"];
 
   return leaders.sort((a: Leader, b: Leader) => {
     const aIndex = order.indexOf(a.name);
@@ -105,6 +105,8 @@ export default async function AboutPage() {
             Technology Science Corporation supports government agencies
             through innovative technology solutions and mission-focused
             service delivery.
+            We encourage and promote a culture heavily vested in creative problem solving, responsiveness, process improvement, high quality results, and out-of-the box best value solutions. We execute by listening to an agency’s issues, encourage transparent communications to meet tight deadlines, and perform with integrity.
+            We understand the federal procurement framework and the importance of collaborating with Enduser, Program Management, and Contracting to execute within budget. Our goal is to be your agency’s trusted IT partner of choice!
           </p>
 
           {/* Added top margin (mt-10) for spacing above */}
