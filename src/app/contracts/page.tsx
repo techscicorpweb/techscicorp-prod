@@ -1,4 +1,5 @@
 import Image from "next/image";
+import ImageMarquee from "@/components/ImageMarquee";
 
 const contracts = [
   {
@@ -46,8 +47,8 @@ const contracts = [
       "UEI: FUJTMURMUZZ8",
       "CAGE Code: 8NWU1",
       {
-      text: "TSC-ITG JV LLC STARS III",
-      href: "https://www.tsc-itg.com/government-it-solutions/contracts/stars3/",
+        text: "TSC-ITG JV LLC STARS III",
+        href: "https://www.tsc-itg.com/government-it-solutions/contracts/stars3/",
       },
       "POC: Thu Stubbs — tstubbs@tsc-itg.com",
     ],
@@ -82,17 +83,17 @@ export default function ContractsPage() {
               <div className="md:col-span-2">
                 <h2 className="text-2xl font-semibold mb-1 text-black">
                   {contract.linkHref ? (
-                  <a
+                    
                       href={contract.linkHref}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="underline decoration-2 underline-offset-2 hover:text-blue-700 transition"
-                   >
-                  {contract.title}
-                </a>
-                ) : (
-                contract.title
-            )}
+                    >
+                      {contract.title}
+                    </a>
+                  ) : (
+                    contract.title
+                  )}
                 </h2>
                 <p className="italic text-gray-500 mb-3">{contract.period}</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
@@ -101,7 +102,7 @@ export default function ContractsPage() {
                       {typeof line === "string" ? (
                         line
                       ) : (
-                      <a
+                        
                           href={line.href}
                           target="_blank"
                           rel="noopener noreferrer"
@@ -113,7 +114,6 @@ export default function ContractsPage() {
                     </li>
                   ))}
                 </ul>
-              
               </div>
 
               {/* Right: logo + caption */}
@@ -132,25 +132,8 @@ export default function ContractsPage() {
         </div>
       </section>
 
-      import ImageMarquee from "@/components/ImageMarquee";
-      // ...existing imports
-
-      export default function ContractsPage() {
-        return (
-          <main>
-            {/* Hero Section */}
-            <section>...</section>
-
-            {/* Contracts List */}
-            <section className="py-20 bg-white">
-
-            </section>
-
-            {/* Logo Marquee */}
-            <ImageMarquee />
-          </main>
-        );
-        }
+      {/* Logo Marquee */}
+      <ImageMarquee />
     </main>
   );
 }
