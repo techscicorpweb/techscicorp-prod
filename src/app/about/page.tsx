@@ -15,7 +15,7 @@ export default function AboutPage() {
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h1 className="text-4xl font-bold mb-6">
+          <h1 className="text-5xl font-bold mb-6">
             About Technology Science Corporation
           </h1>
           <p className="text-lg">
