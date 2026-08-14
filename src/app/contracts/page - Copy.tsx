@@ -45,10 +45,6 @@ const contracts = [
       "DUNS Number: 117595346",
       "UEI: FUJTMURMUZZ8",
       "CAGE Code: 8NWU1",
-      {
-      text: "TSC-ITG JV LLC STARS III",
-      href: "https://www.tsc-itg.com/government-it-solutions/contracts/stars3/",
-      },
       "POC: Thu Stubbs — tstubbs@tsc-itg.com",
     ],
     logo: "/8a-stars-3-logo.jpg",
@@ -97,23 +93,9 @@ export default function ContractsPage() {
                 <p className="italic text-gray-500 mb-3">{contract.period}</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
                   {contract.details.map((line, i) => (
-                    <li key={i}>
-                      {typeof line === "string" ? (
-                        line
-                      ) : (
-                      <a
-                          href={line.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="underline text-blue-700 hover:text-blue-500"
-                        >
-                          {line.text}
-                        </a>
-                      )}
-                    </li>
+                    <li key={i}>{line}</li>
                   ))}
                 </ul>
-              
               </div>
 
               {/* Right: logo + caption */}
