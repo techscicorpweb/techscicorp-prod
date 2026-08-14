@@ -63,7 +63,7 @@ export default function ContractsPage() {
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h1 className="text-5xl font-bold mb-6">Our Contracts</h1>
+          <h1 className="text-4xl font-bold mb-6">Our Contracts</h1>
           <p className="text-xl max-w-3xl text-slate-300">
             Technology Science Corporation holds a range of government-wide
             and agency-specific contract vehicles supporting federal missions.
