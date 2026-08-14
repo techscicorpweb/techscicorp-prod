@@ -16,8 +16,8 @@ type Leader = {
 };
 
 async function getLeadership(): Promise<Leader[]> {
-  return client.fetch(
-    `*[_type == "leadership"] | order(name asc){
+  const leaders = await client.fetch(
+    `*[_type == "leadership"]{
       _id,
       name,
       title,
@@ -25,11 +25,23 @@ async function getLeadership(): Promise<Leader[]> {
       photo
     }`
   );
+
+  const order = ["Thu Stubbs", "Jim Terwilliger", "Dwyane Thomas, CPA"];
+
+  return leaders.sort((a: Leader, b: Leader) => {
+    const aIndex = order.indexOf(a.name);
+    const bIndex = order.indexOf(b.name);
+    if (aIndex === -1 && bIndex === -1) return 0;
+    if (aIndex === -1) return 1;
+    if (bIndex === -1) return -1;
+    return aIndex - bIndex;
+  });
 }
 
 export const revalidate = 60; // seconds
 
 export default async function AboutPage() {
+  // ...everything else in the file stays exactly as-is
   const leadership = await getLeadership();
 
   const corporateProfile = [
