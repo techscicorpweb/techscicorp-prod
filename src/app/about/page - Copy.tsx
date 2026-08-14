@@ -1,35 +1,4 @@
-import imageUrlBuilder from "@sanity/image-url";
-import { client } from "@/lib/sanity";
-import Image from "next/image";
-
-const builder = imageUrlBuilder(client);
-function urlFor(source: any) {
-  return builder.image(source);
-}
-
-type Leader = {
-  _id: string;
-  name: string;
-  title: string;
-  bio?: string;
-  photo?: any;
-};
-
-async function getLeadership(): Promise<Leader[]> {
-  return client.fetch(
-    `*[_type == "leadership"] | order(name asc){
-      _id,
-      name,
-      title,
-      bio,
-      photo
-    }`
-  );
-}
-
-export default async function AboutPage() {
-  const leadership = await getLeadership();
-
+export default function AboutPage() {
   const corporateProfile = [
     "SBA Certified 8(a), SDVOSB, EDWOSB",
     "ISO: 9001:2015 | 14001:2015",
@@ -97,26 +66,6 @@ export default async function AboutPage() {
           <h2 className="text-2xl font-semibold mt-10 mb-4">
             Leadership
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadership.map((leader) => (
-              <div key={leader._id} className="flex flex-col items-center text-center">
-                {leader.photo && (
-                  <Image
-                    src={urlFor(leader.photo).width(300).height(300).url()}
-                    alt={leader.name}
-                    width={160}
-                    height={160}
-                    className="rounded-full object-cover mb-4"
-                  />
-                )}
-                <h3 className="text-lg font-semibold">{leader.name}</h3>
-                <p className="text-sm text-slate-300 mb-2">{leader.title}</p>
-                {leader.bio && (
-                  <p className="text-sm text-slate-300">{leader.bio}</p>
-                )}
-              </div>
-            ))}
-          </div>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4">
             Corporate Profile

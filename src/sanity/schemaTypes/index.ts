@@ -5,6 +5,6 @@ import leadershipType from './leadershipType'
 export const schema: {types: SchemaTypeDefinition[]} = {
   types: [
     jobType,
-	leadershipType,
+    leadershipType,
   ],
 }
