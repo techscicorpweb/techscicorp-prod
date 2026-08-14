@@ -37,16 +37,16 @@ const capabilities = [
   {
     title: "Enterprise Services",
     description: [
-	  "Enterprise Network Operations",
-	  "Network Security",
-	  "Data Center Operations",
-	  "Change Management",
-	  "Continuous Monitoring",
-	  "Network and Cyber Security",
-	  "Intrusion analysis",
-	  "Security Accreditation & Infrastructure Management",
-	  "Vulnerability Management",
-	  "Past Projects",
+      "Enterprise Network Operations",
+      "Network Security",
+      "Data Center Operations",
+      "Change Management",
+      "Continuous Monitoring",
+      "Network and Cyber Security",
+      "Intrusion analysis",
+      "Security Accreditation & Infrastructure Management",
+      "Vulnerability Management",
+      "Past Projects",
       "DISA",
       "Veterans Affairs",
       "Baltimore Data Center",
@@ -79,7 +79,7 @@ export default function CapabilitiesPage() {
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h1 className="text-5xl font-bold mb-6">Our Capabilities</h1>
+          <h1 className="text-4xl font-bold mb-6">Our Capabilities</h1>
           <p className="text-xl max-w-3xl text-slate-300">
             Delivering innovative scientific, engineering, and technical
             solutions that support critical missions and advance technology.
@@ -99,18 +99,18 @@ export default function CapabilitiesPage() {
                   {capability.title}
                 </h2>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-				    {capability.description.map((line, index) => {
-					  if (line.startsWith("Past Projects")) {
-						const rest = line.replace("Past Projects", "");
-						return (
-						<li key={index} className="mt-4 list-none">
-						  <span className="underline">Past Projects</span>
-						  {rest}
-						</li>
-					   );
-					}
-					return <li key={index}>{line}</li>;
-				  })}
+                    {capability.description.map((line, index) => {
+                      if (line.startsWith("Past Projects")) {
+                        const rest = line.replace("Past Projects", "");
+                        return (
+                        <li key={index} className="mt-4 list-none">
+                          <span className="underline">Past Projects</span>
+                          {rest}
+                        </li>
+                       );
+                    }
+                    return <li key={index}>{line}</li>;
+                  })}
                 </ul>
               </div>
             ))}
