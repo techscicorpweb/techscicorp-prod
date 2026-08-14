@@ -95,26 +95,36 @@ export default async function AboutPage() {
 
           {/* Added top margin (mt-10) for spacing above */}
           <h2 className="text-2xl font-semibold mt-10 mb-4">
-            Leadership
+           Leadership
           </h2>
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            {leadership.map((leader) => (
-              <div key={leader._id} className="flex flex-col items-center text-center">
-                {leader.photo && (
-                  <Image
-                    src={urlFor(leader.photo).width(300).height(300).url()}
-                    alt={leader.name}
-                    width={160}
-                    height={160}
-                    className="rounded-full object-cover mb-4"
-                  />
-                )}
-                <h3 className="text-lg font-semibold">{leader.name}</h3>
-                <p className="text-sm text-slate-300 mb-2">{leader.title}</p>
-                {leader.bio && (
-                  <p className="text-sm text-slate-300">{leader.bio}</p>
-                )}
-              </div>
+            <div className="space-y-12">
+              {leadership.map((leader) => (
+                <div key={leader._id} className="flex flex-col md:flex-row gap-8 items-start">
+                  {leader.photo && (
+                    <Image
+                      src={urlFor(leader.photo).width(400).height(400).url()}
+                      alt={leader.name}
+                      width={220}
+                      height={220}
+                      className="object-cover shrink-0"
+                    />
+                  )}
+                  <div>
+                    <h3 className="text-3xl font-bold text-white mb-2">{leader.name}</h3>
+                    <h4 className="text-xl font-semibold text-slate-200 mb-4">{leader.title}</h4>
+                    {leader.bio && (
+                      <div className="space-y-4 text-slate-300">
+                        {leader.bio.split("\n\n").map((paragraph, i) => (
+                          <p key={i}>{paragraph}</p>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+  
+  
             ))}
           </div>
 
