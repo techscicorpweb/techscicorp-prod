@@ -181,7 +181,7 @@ export default async function AboutPage() {
           </ul>
 
           <h2 className="text-2xl font-semibold mt-10 mb-4">
-            Other
+            Technology Science Corporation Corporate Information
           </h2>
           <ul className="list-disc list-inside space-y-1">
             {Misc.map((item, index) => {
