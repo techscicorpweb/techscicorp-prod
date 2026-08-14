@@ -108,10 +108,9 @@ export default function AboutPage() {
 					  target="_blank"
 					  rel="noopener noreferrer"
 					  className="underline text-blue-300 hover:text-blue-200"
-				  >
 					  {item.text}
 				  </a>
-				</li>
+				 </li>
 			  );
 			}
 			return <li key={index}>{item}</li>;
