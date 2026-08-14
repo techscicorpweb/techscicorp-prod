@@ -41,7 +41,6 @@ async function getLeadership(): Promise<Leader[]> {
 export const revalidate = 60; // seconds
 
 export default async function AboutPage() {
-  // ...everything else in the file stays exactly as-is
   const leadership = await getLeadership();
 
   const corporateProfile = [
@@ -101,48 +100,59 @@ export default async function AboutPage() {
           <h1 className="text-4xl font-bold mb-6">
             About Technology Science Corporation
           </h1>
-          <p className="text-lg">
-            Technology Science Corporation supports government agencies
-            through innovative technology solutions and mission-focused
-            service delivery.
+          <div className="space-y-4 text-lg">
             <p>
-            We encourage and promote a culture heavily vested in creative problem solving, responsiveness, process improvement, high quality results, and out-of-the box best value solutions. We execute by listening to an agency’s issues, encourage transparent communications to meet tightdeadlines, and perform with integrity.
+              Technology Science Corporation supports government agencies
+              through innovative technology solutions and mission-focused
+              service delivery.
             </p>
             <p>
-            We understand the federal procurement framework and the importance of collaborating with Enduser, Program Management, and Contracting to execute within budget. Our goal is to be your agency’s trusted IT partner of choice!
+              We encourage and promote a culture heavily vested in creative
+              problem solving, responsiveness, process improvement, high
+              quality results, and out-of-the box best value solutions. We
+              execute by listening to an agency&apos;s issues, encourage
+              transparent communications to meet tight deadlines, and
+              perform with integrity.
             </p>
-          </p>
+            <p>
+              We understand the federal procurement framework and the
+              importance of collaborating with Enduser, Program Management,
+              and Contracting to execute within budget. Our goal is to be
+              your agency&apos;s trusted IT partner of choice!
+            </p>
+          </div>
 
           {/* Added top margin (mt-10) for spacing above */}
           <h2 className="text-2xl font-semibold mt-10 mb-4">
-           Leadership
+            Leadership
           </h2>
-            <div className="space-y-12">
-              {leadership.map((leader) => (
-                <div key={leader._id} className="flex flex-col md:flex-row gap-8 items-start">
-                  {leader.photo && (
-                    <Image
-                      src={urlFor(leader.photo).width(400).url()}
-                      alt={leader.name}
-                      width={220}
-                      height={220}
-                      className="object-cover shrink-0"
-                    />
+          <div className="space-y-12">
+            {leadership.map((leader) => (
+              <div key={leader._id} className="flex flex-col md:flex-row gap-8 items-start">
+                {leader.photo && (
+                  <Image
+                    src={urlFor(leader.photo).width(400).url()}
+                    alt={leader.name}
+                    width={220}
+                    height={220}
+                    className="object-cover shrink-0"
+                  />
+                )}
+                <div>
+                  <h3 className="text-3xl font-bold text-white mb-2">{leader.name}</h3>
+                  <h4 className="text-xl font-semibold text-slate-200 mb-4">{leader.title}</h4>
+                  {leader.bio && (
+                    <div className="space-y-4 text-slate-300">
+                      {leader.bio.split("\n\n").map((paragraph, i) => (
+                        <p key={i}>{paragraph}</p>
+                      ))}
+                    </div>
                   )}
-                  <div>
-                    <h3 className="text-3xl font-bold text-white mb-2">{leader.name}</h3>
-                    <h4 className="text-xl font-semibold text-slate-200 mb-4">{leader.title}</h4>
-                    {leader.bio && (
-                      <div className="space-y-4 text-slate-300">
-                        {leader.bio.split("\n\n").map((paragraph, i) => (
-                          <p key={i}>{paragraph}</p>
-                        ))}
-                      </div>
-                    )}
-                  </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
+
           <h2 className="text-2xl font-semibold mt-10 mb-4">
             Corporate Profile
           </h2>
