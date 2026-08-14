@@ -94,8 +94,8 @@ export default function CapabilitiesPage() {
                 </h2>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
 				    {capability.description.map((line, index) => {
-					  if (line.startsWith("Past Projects:")) {
-						const rest = line.replace("Past Projects:", "");
+					  if (line.startsWith("Past Projects")) {
+						const rest = line.replace("Past Projects", "");
 						return (
 						<li key={index} className="mt-4 list-none">
 						  <span className="underline">Past Projects</span>
