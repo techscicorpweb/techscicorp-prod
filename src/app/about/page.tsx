@@ -123,11 +123,6 @@ export default async function AboutPage() {
                 </div>
               ))}
             </div>
-  
-  
-            ))}
-          </div>
-
           <h2 className="text-2xl font-semibold mt-10 mb-4">
             Corporate Profile
           </h2>
