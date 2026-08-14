@@ -20,6 +20,22 @@ export default function AboutPage() {
 	"8(a) Sole Source Pool",
   ];
 
+  const NAICS = [
+    "238210 – Electrical and Other Wiring Installation Contractors",
+	"541330 – Engineering Services",
+	"541511﻿ – Custom Computer Programing Services",
+	"541512 – ﻿﻿Computer Systems Design Services﻿﻿",
+	"541513 – Computer Facilities Management Services",
+	"541519 – Other Computer Related Services",
+	"541611 – Administrative Management Consulting Services (Primary)",
+	"541614 – Process, Physical Distribution, and Logistics Consulting Services ",
+	"541618 – Other Management Consulting Services",
+	"541990 – All Other Professional, Scientific, and Technical Services",
+	"561210 - Facility Support Services",
+	"561920 – Convention and Trade Show Organizers",
+	"611620 –  Sports and Recreation Instruction",
+  ];
+
   return (
     <main>
       {/* Hero Section */}
@@ -56,6 +72,16 @@ export default function AboutPage() {
               <li key={index}>{item}</li>
             ))}
           </ul>
+		  
+		  <h2 className="text-2xl font-semibold mt-10 mb-4">
+            NAICS
+          </h2>
+          <ul className="list-disc list-inside space-y-1">
+            {NAICS.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+		  
         </div>
       </section>
     </main>
