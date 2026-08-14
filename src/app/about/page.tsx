@@ -44,7 +44,6 @@ export default function AboutPage() {
       text: "GSA MAS: GS-35F-445GA",
       href: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
     },
-    "View/Download Schedule",
     "ISO Certified (2025): 9001:2015 & 14001:2015",
     "MWAA LDBE #: LD2014-0043-2017",
   ];

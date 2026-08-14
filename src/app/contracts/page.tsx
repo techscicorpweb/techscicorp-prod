@@ -1,138 +1,119 @@
-import Link from "next/link";
-export const metadata = {
-  title: "Contracts | Technology Science Corporation",
-  description:
-    "Technology Science Corporation provides advanced engineering, scientific research, systems integration, and mission support solutions.",
-};
-const capabilities = [
+import Image from "next/image";
+
+const contracts = [
   {
-    title: "Program Management",
-    description: [
-      "Project Management & Records Information Management Supply",
-      "Implementation & Support",
-      "CTP Reg compliance",
-	  "Past Projects",
-	  "Defense Health Agency",
-	  "Customs & Border Protection",
-	  "Navy, Veterans Affairs", 
-	  "Food & Drug Administration",
+    title: "GSA MAS: GS-35F-445GA",
+    linkText: "View/Download Schedule",
+    linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
+    period: "Contract Period: June 2, 2017 – June 1, 2027",
+    details: [
+      "SIN 54151S - Information Technology Professional Services",
+      "Class D301 (DC01) IT AND TELECOM - Facility Operation Maintenance – Facility Management",
+      "Class D302 (DA01) IT AND TELECOM - Systems Development",
+      "Class D306 (DD01) IT AND TELECOM - Systems Analysis",
+      "Class D307 (DA01) IT AND TELECOM - IT Strategy and Architecture",
+      "Class D308 (DA01) IT AND TELECOM - Programming",
+      "Class D310 (DJ01) IT AND TELECOM - Backup and Security Services",
+      "Class D316 (DG01) IT AND TELECOM - Telecommunications Network Management",
+      "Class D399 (DA01) IT AND TELECOM - Other and Telecommunications – Other IT Services",
+      "SIN 132 100 - Ancillary Supplies and/or Services (Subject to Cooperative Purchasing)",
+      "Class 7010 (7B22) ADPE System Configuration – Ancillary Supplies and/or Services",
+      "Class D399 (DA01) IT AND TELECOM - Other IT and Telecommunications – Ancillary Supplies and Services",
+      "SIN 541990AV - Professional Audio/Video Services",
     ],
+    logo: "/gsa-mas-logo.png",
+    logoCaption: "GSA MAS Contract Holder GS-35F-445GA",
   },
   {
-    title: "Unified Communications, Audio Visual (AV) & Video Teleconference (VTC)",
-    description: [
-	  "AV Design and Installation",
-      "VTC Services and Project Management", 
-      "AMX/Crestron Programming and Integration", 
-      "Maintenance and End User training",
-	  "Past Projects",
-	  "DISA", 
-	  "Special Operations Command (Pentagon)", 
-	  "Department of Justice", 
-	  "National Institute of Health", 
-	  "Fairfax County, VA", 
-	  "Maryland Casinos",
+    title: "GSA OASIS+ Multiple Awards: TSC-SPTRMJV, LLC",
+    linkHref: null,
+    period: "Contract Period: December 2024 – 5-Year Base with one 5-Year Option",
+    details: [
+      "Awards: Total SB: 47QRCA25DSF73, SDVOSB: 47QRCA25DV098, WOSB: 47QRCA25DW137, 8(a): 47QRCA25DA390",
+      "DUNS Number: 125656895",
+      "UEI: YAL1ZEQ9C6N7",
+      "CAGE Code: 7YAL6",
+      "POC: Thu Stubbs — thu.stubbs@tsc-sptrm-jv.com",
     ],
+    logo: "/oasis-plus-logo.jpg",
+    logoCaption: "Awarded to Joint Venture TSC-SPTRM-JV LLC Multiple Awards",
   },
   {
-    title: "Enterprise Services",
-    description: [
-	  "Enterprise Network Operations",
-	  "Network Security",
-	  "Data Center Operations",
-	  "Change Management",
-	  "Continuous Monitoring",
-	  "Network and Cyber Security",
-	  "Intrusion analysis",
-	  "Security Accreditation & Infrastructure Management",
-	  "Vulnerability Management",
-	  "Past Projects",
-      "DISA",
-      "Veterans Affairs",
-      "Baltimore Data Center",
+    title: "GSA 8(a) STARS III 47QTCB22D0521: TSC-ITG JV, LLC",
+    linkHref: null,
+    period: "Contract Period: July 2, 2021 – July 1, 2026 with (1) 3-year option",
+    details: [
+      "DUNS Number: 117595346",
+      "UEI: FUJTMURMUZZ8",
+      "CAGE Code: 8NWU1",
+      "POC: Thu Stubbs — tstubbs@tsc-itg.com",
     ],
-  },
-  {
-    title: "Global Product Warranty and Maintenance",
-    description: [
-      "Break/Fix Services - hardware system repairs, installations and upgrades across networking platforms",
-      "Help Desk: 24/7/365 CONUS/OCONUS; Centralized Trouble-Shooting Dispatch",
-      "Incident Management & Escalation Tracking",
-      "Maintains a 99% SLA attainment across all contracts and continuous improvement",
-    ],
-  },
-  {
-    title: "Managed Print Services",
-    description: [
-      "Manage consumable acquisition",
-      "Identify potential constraints for better capacity and availability",
-      "Managing spend throughout the product lifecycle",
-      "Multivendor CAC Deployment and integration",
-      "Asset Management & HW Maintenance",
-      "​Printer utilization and Reporting",
-    ],
+    logo: "/8a-stars-3-logo.jpg",
+    logoCaption: "Awarded to Joint Venture TSC-ITG JV 47QTCB22D0521",
   },
 ];
-export default function CapabilitiesPage() {
+
+export default function ContractsPage() {
   return (
     <main>
       {/* Hero Section */}
       <section className="bg-slate-900 text-white py-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <h1 className="text-5xl font-bold mb-6">Our Capabilities</h1>
+          <h1 className="text-5xl font-bold mb-6">Our Contracts</h1>
           <p className="text-xl max-w-3xl text-slate-300">
-            Delivering innovative scientific, engineering, and technical
-            solutions that support critical missions and advance technology.
+            Technology Science Corporation holds a range of government-wide
+            and agency-specific contract vehicles supporting federal missions.
           </p>
         </div>
       </section>
-      {/* Capability Cards */}
+
+      {/* Contracts List */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-6 max-w-7xl">
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {capabilities.map((capability) => (
-              <div
-                key={capability.title}
-                className="border rounded-lg p-8 shadow-sm hover:shadow-lg transition"
-              >
-                <h2 className="text-2xl font-semibold mb-4 text-black">
-                  {capability.title}
+        <div className="container mx-auto px-6 max-w-7xl space-y-12">
+          {contracts.map((contract, index) => (
+            <div
+              key={index}
+              className="border rounded-lg p-8 shadow-sm hover:shadow-lg transition grid md:grid-cols-3 gap-8 items-start"
+            >
+              {/* Left: text content */}
+              <div className="md:col-span-2">
+                <h2 className="text-2xl font-semibold mb-1 text-black">
+                  {contract.title}
+                  {contract.linkHref && (
+                    <>
+                      {" "}
+                      
+                        href={contract.linkHref}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="underline text-blue-700 hover:text-blue-500 text-lg"
+                      >
+                        {contract.linkText}
+                      </a>
+                    </>
+                  )}
                 </h2>
+                <p className="italic text-gray-500 mb-3">{contract.period}</p>
                 <ul className="list-disc list-inside text-gray-600 space-y-1">
-				    {capability.description.map((line, index) => {
-					  if (line.startsWith("Past Projects")) {
-						const rest = line.replace("Past Projects", "");
-						return (
-						<li key={index} className="mt-4 list-none">
-						  <span className="underline">Past Projects</span>
-						  {rest}
-						</li>
-					   );
-					}
-					return <li key={index}>{line}</li>;
-				  })}
+                  {contract.details.map((line, i) => (
+                    <li key={i}>{line}</li>
+                  ))}
                 </ul>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      {/* CTA */}
-      <section className="py-20 bg-slate-100">
-        <div className="container mx-auto px-6 max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-6">
-            Ready to Support Your Mission
-          </h2>
-          <p className="text-lg text-gray-600 mb-8">
-            Learn how Technology Science Corporation can help solve your most
-            complex technical challenges.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition"
-          >
-            Contact Us
-          </Link>
+
+              {/* Right: logo + caption */}
+              <div className="flex flex-col items-center text-center">
+                <Image
+                  src={contract.logo}
+                  alt={contract.logoCaption}
+                  width={200}
+                  height={130}
+                  className="mb-3"
+                />
+                <p className="text-sm text-gray-500">{contract.logoCaption}</p>
+              </div>
+            </div>
+          ))}
         </div>
       </section>
     </main>
