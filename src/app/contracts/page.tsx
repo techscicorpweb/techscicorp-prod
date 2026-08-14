@@ -131,6 +131,26 @@ export default function ContractsPage() {
           ))}
         </div>
       </section>
+
+      import ImageMarquee from "@/components/ImageMarquee";
+      // ...existing imports
+
+      export default function ContractsPage() {
+        return (
+          <main>
+            {/* Hero Section */}
+            <section>...</section>
+
+            {/* Contracts List */}
+            <section className="py-20 bg-white">
+
+            </section>
+
+            {/* Logo Marquee */}
+            <ImageMarquee />
+          </main>
+        );
+        }
     </main>
   );
 }
