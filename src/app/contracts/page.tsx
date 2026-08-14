@@ -83,7 +83,7 @@ export default function ContractsPage() {
               <div className="md:col-span-2">
                 <h2 className="text-2xl font-semibold mb-1 text-black">
                   {contract.linkHref ? (
-                    
+                    <a
                       href={contract.linkHref}
                       target="_blank"
                       rel="noopener noreferrer"
@@ -102,7 +102,7 @@ export default function ContractsPage() {
                       {typeof line === "string" ? (
                         line
                       ) : (
-                        
+                        <a
                           href={line.href}
                           target="_blank"
                           rel="noopener noreferrer"
