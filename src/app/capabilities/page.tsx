@@ -98,7 +98,7 @@ export default function CapabilitiesPage() {
 						const rest = line.replace("Past Projects:", "");
 						return (
 						<li key={index} className="mt-4 list-none">
-						  <span className="underline">Past Projects:</span>
+						  <span className="underline">Past Projects</span>
 						  {rest}
 						</li>
 					   );
