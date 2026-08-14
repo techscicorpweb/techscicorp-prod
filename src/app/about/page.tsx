@@ -27,6 +27,8 @@ async function getLeadership(): Promise<Leader[]> {
   );
 }
 
+export const revalidate = 60; // seconds
+
 export default async function AboutPage() {
   const leadership = await getLeadership();
 
