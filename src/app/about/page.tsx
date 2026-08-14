@@ -103,7 +103,7 @@ export default function AboutPage() {
               if (typeof item === "object") {
                 return (
                   <li key={index}>
-                    
+                    <a
                       href={item.href}
                       target="_blank"
                       rel="noopener noreferrer"
