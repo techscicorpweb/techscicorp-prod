@@ -36,11 +36,14 @@ const capabilities = [
 	  "Intrusion analysis",
 	  "Security Accreditation & Infrastructure Management",
 	  "Vulnerability Management",
-	  
+	  "Past Projects:",
+      "DISA"
+      "Veterans Affairs",
+      "Baltimore Data Center",
     ],
   },
   {
-    title: "Modeling & Simulation",
+    title: "Global Product Warranty and Maintenance",
     description: [
       "Advanced analytical tools and simulation environments for decision support and system development.",
     ],
