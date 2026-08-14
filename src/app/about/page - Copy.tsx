@@ -1,12 +1,10 @@
 export default function AboutPage() {
   return (
-    {/*<main className="max-w-7xl mx-auto px-6 py-16 bg-slate-900 text-white">*/}
-      {/* Hero Section */}
-      <section className="bg-slate-900 text-white py-24">
-        <div className="container mx-auto px-6 max-w-7xl">
-	      <h1 className="text-4xl font-bold mb-6">
-           About Technology Science Corporation
-          </h1>
+    <main className="max-w-7xl mx-auto px-6 py-16 bg-slate-900 text-white">
+      <h1 className="text-4xl font-bold mb-6">
+        About Technology Science Corporation
+      </h1>
+
       <p className="text-lg">
         Technology Science Corporation supports
         government agencies through innovative
