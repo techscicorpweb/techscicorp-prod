@@ -83,7 +83,7 @@ export default function ContractsPage() {
                     <>
                       {" "}
 					  <a
-                        href={contract.linkHref}
+                        href={contract.linkHref}>
                         target="_blank"
                         rel="noopener noreferrer"
                         className="underline text-blue-700 hover:text-blue-500 text-lg"
