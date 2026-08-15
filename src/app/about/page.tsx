@@ -67,8 +67,8 @@ export default async function AboutPage() {
   const NAICS = [
     "238210 – Electrical and Other Wiring Installation Contractors",
     "541330 – Engineering Services",
-    "541511﻿ – Custom Computer Programing Services",
-    "541512 – ﻿﻿Computer Systems Design Services﻿﻿",
+    "541511 – Custom Computer Programing Services",
+    "541512 – Computer Systems Design Services",
     "541513 – Computer Facilities Management Services",
     "541519 – Other Computer Related Services",
     "541611 – Administrative Management Consulting Services (Primary)",

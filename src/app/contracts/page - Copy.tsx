@@ -55,23 +55,6 @@ const contracts = [
     logo: "/8a-stars-3-logo.jpg",
     logoCaption: "Awarded to Joint Venture TSC-ITG JV 47QTCB22D0521",
   },
-    {
-    title: "GSA 8(a) SEWP VI TSC-ITG2 JV, LLC",
-    linkHref: null,
-    period: "Contract Period:",
-    details: [
-      "DUNS Number:",
-      "UEI: WF73WKMVFAG3",
-      "CAGE Code: 9XS17",
-      {
-        text: "TSC-ITG JV LLC SEWP VI",
-        href: "https://tsc-itg2.com/",
-      },
-      "POC: Thu Stubbs — tstubbs@tsc-itg.com",
-    ],
-    logo: "/SEWP-VI-logo.png",
-    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV",
-  },
 ];
 
 export default function ContractsPage() {
