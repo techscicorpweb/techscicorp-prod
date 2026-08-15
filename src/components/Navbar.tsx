@@ -21,15 +21,15 @@ export default function Navbar() {
           </Link>
           <Link href="./about">About TSC
           </Link>
-		  <Link href="./contracts">Contracts
-		  </Link>
+          <Link href="./contracts">Contracts
+          </Link>
           <Link href="./careers">Careers
           </Link>
           <Link href="./contact">Contact Us
           </Link>
         </div>
 
-      </div>		
-	</nav>
+      </div>
+    </nav>
   );
 }
