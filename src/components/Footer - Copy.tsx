@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function Footer() {
@@ -17,29 +16,12 @@ export default function Footer() {
               Delivering innovative scientific, engineering, and technical
               solutions to support critical government and defense missions.
             </p>
-
-            {/* Certification Logos */}
-            <div className="flex items-center gap-4 mt-5">
-              <Image
-                src="/sba-8a-logo.jpg"
-                alt="SBA 8(a) Certified"
-                width={60}
-                height={60}
-                className="h-12 w-auto rounded bg-white p-1"
-              />
-              <Image
-                src="/sba-edwosb-logo.png"
-                alt="SBA EDWOSB Certified"
-                width={60}
-                height={60}
-                className="h-12 w-auto rounded bg-white p-1"
-              />
-            </div>
           </div>
 
           {/* Quick Links */}
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
+
             <ul className="space-y-1">
               <li>
                 <Link
@@ -49,6 +31,7 @@ export default function Footer() {
                   Home
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/about"
@@ -57,6 +40,7 @@ export default function Footer() {
                   About
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/capabilities"
@@ -65,6 +49,7 @@ export default function Footer() {
                   Capabilities
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/careers"
@@ -73,6 +58,7 @@ export default function Footer() {
                   Careers
                 </Link>
               </li>
+
               <li>
                 <Link
                   href="/contact"
@@ -87,9 +73,11 @@ export default function Footer() {
           {/* Contact */}
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
+
             <div className="space-y-1 text-slate-300">
               <p>Technology Science Corporation</p>
               <p>Reston, VA</p>
+
               <p>
                 <a
                   href="mailto:info@techscicorp.com"
@@ -98,6 +86,7 @@ export default function Footer() {
                   info@techscicorp.com
                 </a>
               </p>
+
               <p>
                 <a
                   href="tel:+1800-224-3137"
