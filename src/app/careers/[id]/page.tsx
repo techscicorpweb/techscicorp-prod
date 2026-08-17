@@ -13,11 +13,12 @@ type Job = {
 export async function generateMetadata({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
   const job: Job | null = await client.fetch(
     `*[_type == "job" && _id == $id][0]`,
-    { id: params.id }
+    { id }
   );
 
   return {
@@ -28,11 +29,13 @@ export async function generateMetadata({
 export default async function JobDetailPage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
+
   const job: Job | null = await client.fetch(
     `*[_type == "job" && _id == $id][0]`,
-    { id: params.id }
+    { id }
   );
 
   if (!job) return notFound();
