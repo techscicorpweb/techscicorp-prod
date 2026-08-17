@@ -29,7 +29,7 @@ export default function Footer() {
               />
               <Image
                 src="/sba-edwosb-logo.png"
-                alt="SBA EDWOSB Certified"
+                alt="SBA Economically Disadvantaged Women-Owned Small Business"
                 width={60}
                 height={60}
                 className="h-12 w-auto rounded bg-white p-1"
