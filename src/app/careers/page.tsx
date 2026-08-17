@@ -106,7 +106,7 @@ export default async function CareersPage() {
             height={100}
             className="mb-3"
           />
-          <p className="text-sm text-slate-500">E-Verify Participation Poster</p>
+          <p className="text-sm text-slate-500">E-Verify Participation Poster!</p>
         </div>
       </section>
 
