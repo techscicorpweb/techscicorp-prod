@@ -45,7 +45,7 @@ export default async function CareersPage() {
       </section>
 
       {/* Job Cards */}
-      <section className="py-20 bg-white">
+      <section className="pt-20 pb-8 bg-white">
         <div className="container mx-auto px-6 max-w-7xl">
           {jobs.length === 0 ? (
             <p className="text-gray-600 text-lg">
@@ -97,7 +97,7 @@ export default async function CareersPage() {
       </section>
 
       {/* E-Verify */}
-      <section className="py-12 bg-white">
+      <section className="pt-4 pb-12 bg-white">
         <div className="container mx-auto px-6 max-w-4xl flex flex-col items-center text-center">
           <Image
             src="/e-verify-logo.png"
