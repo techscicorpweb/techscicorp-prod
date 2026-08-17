@@ -72,15 +72,18 @@ export default async function JobDetailPage({
           )}
           {job.postedDate && (
             <p className="text-sm text-slate-400 mt-3">
-              Posted: {formatDate(job.postedDate)}
+              Posted {formatDate(job.postedDate)}
             </p>
           )}
         </div>
       </section>
 
       {/* Job Details */}
-      <section className="py-20 bg-white">
+      <section className="pt-8 pb-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl">
+          <h2 className="text-2xl font-semibold mb-4 text-black">
+            Job Description
+          </h2>
           <div className="border rounded-lg p-8 shadow-sm">
             {job.description ? (
               <p className="text-gray-600 whitespace-pre-line leading-relaxed">
