@@ -99,7 +99,8 @@ export default async function AboutPage() {
       text: "TSC ITG2 JV",
       href: "https://tsc-itg2.com/",
     },
-    "Clearances: DoD, DHS, and Federal Clearances",
+    "ISO Certified (2025): 9001:2015 & 14001:2015",
+	"Clearances: DoD, DHS, and Federal Clearances",
   ];
   
 
@@ -213,7 +214,7 @@ export default async function AboutPage() {
               return <li key={index}>{item}</li>;
             })}
           </ul>
-		  
+
           <h2 className="text-2xl font-semibold mt-10 mb-4">
             TSC-ITG2 JV
           </h2>
