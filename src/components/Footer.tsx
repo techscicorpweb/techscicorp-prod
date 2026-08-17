@@ -86,7 +86,7 @@ export default function Footer() {
                   href="/contact"
                   className="text-slate-300 hover:text-white transition"
                 >
-                  Contact
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -97,7 +97,6 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-1 text-slate-300">
               <p>Technology Science Corporation</p>
-              <p>Reston, VA</p>
               <p>
                 <a
                   href="mailto:info@techscicorp.com"
