@@ -1,62 +1,97 @@
 import Image from "next/image";
+import Link from "next/link";
 
-export default function Home() {
+export const metadata = {
+  title: "Technology Science Corporation",
+  description:
+    "Technology Science Corporation provides advanced engineering, scientific research, systems integration, and mission support solutions.",
+};
+
+export default function HomePage() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
-		  </h1>
-			We specialize in program management, audiovisual/video-teleconference services, and enterprise network and security services. Through our extensive experience and background, we provide top-quality customer service and post-award operations by encouraging and promoting a culture of creative problem-solving and responsiveness in search of high-quality, lower-cost process improvement. We listen, customize the solution, and perform with integrity. Our values include the importance of collaboration to produce a winning solution.
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+    <main>
+      {/* Hero Section */}
+      <section className="bg-slate-900 text-white py-24">
+        <div className="container mx-auto px-6 max-w-7xl">
+          <h1 className="text-4xl font-bold mb-6">
+            Technology Science Corporation
+          </h1>
+          <p className="text-xl max-w-3xl text-slate-300">
+            Delivering innovative scientific, engineering, and technical
+            solutions that support critical missions and advance technology.
           </p>
+          <div className="mt-8 flex gap-4">
+            <Link
+              href="/capabilities"
+              className="inline-block bg-white text-slate-900 hover:bg-slate-100 font-medium px-8 py-3 rounded-lg transition"
+            >
+              Our Capabilities
+            </Link>
+            <Link
+              href="/contact"
+              className="inline-block border border-white text-white hover:bg-white hover:text-slate-900 font-medium px-8 py-3 rounded-lg transition"
+            >
+              Contact Us
+            </Link>
+          </div>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      </section>
+
+      {/* Image Banner Section (light blue, responsive background image via next/image) */}
+      <section className="relative py-24 overflow-hidden bg-slate-100">
+        {/* Responsive background image */}
+        <Image
+          src="/images/home-banner.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-center"
+        />
+
+        {/* Light-blue tint overlay, matches bg-slate-100 (#f1f5f9) */}
+        <div
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(241, 245, 249, 0.85)" }}
+        />
+
+        {/* Content sits above the image + overlay */}
+        <div className="relative container mx-auto px-6 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-6 text-slate-900">
+            Mission-Focused. Technically Driven.
+          </h2>
+          <p className="text-lg text-slate-700 mb-8">
+            From program management to enterprise network operations, TSC
+            supports the agencies and organizations that keep critical
+            systems running.
+          </p>
+          <Link
+            href="/capabilities"
+            className="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition"
           >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+            Explore Our Capabilities
+          </Link>
         </div>
-      </main>
-    </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-6 max-w-4xl text-center">
+          <h2 className="text-4xl font-bold mb-6 text-slate-900">
+            Ready to Support Your Mission
+          </h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Learn how Technology Science Corporation can help solve your most
+            complex technical challenges.
+          </p>
+          <Link
+            href="/contact"
+            className="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition"
+          >
+            Contact Us
+          </Link>
+        </div>
+      </section>
+    </main>
   );
 }
