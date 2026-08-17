@@ -17,9 +17,9 @@ export default function Navbar() {
         <div className="flex gap-6">
           <Link href="/.">Home
           </Link>
-          <Link href="./capabilities">Capabilities
-          </Link>
           <Link href="./about">About TSC
+          </Link>
+          <Link href="./capabilities">Capabilities
           </Link>
           <Link href="./contracts">Contracts
           </Link>
