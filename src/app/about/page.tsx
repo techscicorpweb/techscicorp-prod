@@ -92,6 +92,17 @@ export default async function AboutPage() {
     "MWAA LDBE #: LD2014-0043-2017",
   ];
 
+  const TSCITG2 = [
+    "Unique Entity ID (UEI): WF73WKMVFAG3",
+    "CAGE Code: 9XS17",
+    {
+      text: "TSC ITG2 JV",
+      href: "https://tsc-itg2.com/",
+    },
+    "Clearances: DoD, DHS, and Federal Clearances",
+  ];
+  
+
   return (
     <main>
       {/* Hero Section */}
@@ -202,6 +213,30 @@ export default async function AboutPage() {
               return <li key={index}>{item}</li>;
             })}
           </ul>
+		  
+          <h2 className="text-2xl font-semibold mt-10 mb-4">
+            TSC-ITG2 JV
+          </h2>
+          <ul className="list-disc list-inside space-y-1">
+            {TSCITG2.map((item, index) => {
+              if (typeof item === "object") {
+                return (
+                  <li key={index}>
+                    <a
+                      href={item.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline text-blue-300 hover:text-blue-200"
+                    >
+                      {item.text}
+                    </a>
+                  </li>
+                );
+              }
+              return <li key={index}>{item}</li>;
+            })}
+          </ul>
+		  
         </div>
       </section>
     </main>

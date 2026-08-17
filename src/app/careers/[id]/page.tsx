@@ -72,7 +72,7 @@ export default async function JobDetailPage({
           )}
           {job.postedDate && (
             <p className="text-sm text-slate-400 mt-3">
-              Posted {formatDate(job.postedDate)}
+              Posted: {formatDate(job.postedDate)}
             </p>
           )}
         </div>
