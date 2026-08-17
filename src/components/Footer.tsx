@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
 
-            <ul className="space-y-2">
+            <ul className="space-y-1">
               <li>
                 <Link
                   href="/"
@@ -74,7 +74,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
 
-            <div className="space-y-2 text-slate-300">
+            <div className="space-y-1 text-slate-300">
               <p>Technology Science Corporation</p>
               <p>Reston, VA</p>
 
