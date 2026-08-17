@@ -13,21 +13,10 @@ type Job = {
   location?: string;
   clearance?: string;
   description?: string;
-  postedDate?: string;
 };
 
-function formatDate(dateString: string) {
-  return new Date(dateString).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-  });
-}
-
 export default async function CareersPage() {
-  const jobs: Job[] = await client.fetch(
-    `*[_type == "job"] | order(postedDate desc)`
-  );
+  const jobs: Job[] = await client.fetch(`*[_type == "job"] | order(_createdAt desc)`);
 
   return (
     <main>
@@ -63,21 +52,15 @@ export default async function CareersPage() {
                   </h2>
 
                   {(job.location || job.clearance) && (
-                    <p className="text-sm font-medium text-slate-500 mb-1">
+                    <p className="text-sm font-medium text-slate-500 mb-4">
                       {job.location}
                       {job.location && job.clearance ? " \u00b7 " : ""}
                       {job.clearance}
                     </p>
                   )}
 
-                  {job.postedDate && (
-                    <p className="text-xs text-slate-400 mb-4">
-                      Posted {formatDate(job.postedDate)}
-                    </p>
-                  )}
-
                   {job.description && (
-                    <p className="text-gray-600 mb-6 flex-1 line-clamp-3">
+                    <p className="text-gray-600 mb-6 flex-1">
                       {job.description}
                     </p>
                   )}

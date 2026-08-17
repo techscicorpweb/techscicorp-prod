@@ -8,7 +8,16 @@ type Job = {
   location?: string;
   clearance?: string;
   description?: string;
+  postedDate?: string;
 };
+
+function formatDate(dateString: string) {
+  return new Date(dateString).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+  });
+}
 
 export async function generateMetadata({
   params,
@@ -22,7 +31,9 @@ export async function generateMetadata({
   );
 
   return {
-    title: job ? `${job.title} | Careers | Technology Science Corporation` : "Job Not Found",
+    title: job
+      ? `${job.title} | Careers | Technology Science Corporation`
+      : "Job Not Found",
   };
 }
 
@@ -57,6 +68,11 @@ export default async function JobDetailPage({
               {job.location}
               {job.location && job.clearance ? " \u00b7 " : ""}
               {job.clearance}
+            </p>
+          )}
+          {job.postedDate && (
+            <p className="text-sm text-slate-400 mt-3">
+              Posted {formatDate(job.postedDate)}
             </p>
           )}
         </div>
