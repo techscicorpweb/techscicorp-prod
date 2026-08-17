@@ -66,7 +66,6 @@ export default async function CareersPage() {
                   )}
 
                   <Link
-				  <a
                     href={`/careers/${job._id}`}
                     className="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-2 rounded-lg transition text-center"
                   >
@@ -89,7 +88,6 @@ export default async function CareersPage() {
             future opportunities.
           </p>
           <Link
-		  <a
             href="/contact"
             className="inline-block bg-slate-900 hover:bg-slate-800 text-white font-medium px-8 py-3 rounded-lg transition"
           >
