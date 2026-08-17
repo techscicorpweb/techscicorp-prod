@@ -13,9 +13,12 @@ export default function ContactPage() {
       <p>
         Reston, VA 20190
       </p>
-      <p>
-        info@techscicorp.com
-      </p>
+        <a
+         href="mailto:info@techscicorp.com"
+         className="hover:text-white transition"
+        >
+         info@techscicorp.com
+         </a>
       <p>
         (800) 224-3137
       </p>
