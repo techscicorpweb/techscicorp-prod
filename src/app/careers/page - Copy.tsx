@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { client } from "@/lib/sanity";
 
@@ -111,20 +110,6 @@ export default async function CareersPage() {
           >
             Contact Us
           </Link>
-        </div>
-      </section>
-
-      {/* E-Verify */}
-      <section className="py-12 bg-white">
-        <div className="container mx-auto px-6 max-w-4xl flex flex-col items-center text-center">
-          <Image
-            src="/e-verify-logo.png"
-            alt="E-Verify"
-            width={200}
-            height={100}
-            className="mb-3"
-          />
-          <p className="text-sm text-slate-500">E-Verify Participation Poster</p>
         </div>
       </section>
     </main>
