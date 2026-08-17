@@ -120,7 +120,7 @@ export default function CapabilitiesPage() {
       {/* CTA */}
       <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-6 max-w-4xl text-center">
-          <h2 className="text-4xl font-bold mb-6">
+          <h2 className="text-4xl font-bold text-black mb-6">
             Ready to Support Your Mission
           </h2>
           <p className="text-lg text-gray-600 mb-8">
