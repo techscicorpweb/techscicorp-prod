@@ -25,14 +25,5 @@ export default defineType({
 	  title: 'Clearance',
       type: 'string',
     }),
-	define field({
-      name: "postedDate",
-      title: "Posted Date",
-      type: "date",
-      options:
-	  {
-        dateFormat: "MMMM D, YYYY",
-      },
-      initialValue: () => new Date().toISOString().split("T")[0],
   ],
 })
