@@ -25,7 +25,7 @@ export default defineType({
 	  title: 'Clearance',
       type: 'string',
     }),
-	define field({
+	defineField({
       name: "postedDate",
       title: "Posted Date",
       type: "date",
