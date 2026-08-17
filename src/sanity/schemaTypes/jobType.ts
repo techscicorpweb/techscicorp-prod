@@ -34,5 +34,6 @@ export default defineType({
         dateFormat: "MMMM D, YYYY",
       },
       initialValue: () => new Date().toISOString().split("T")[0],
+    }),
   ],
 })
