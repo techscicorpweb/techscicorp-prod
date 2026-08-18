@@ -97,11 +97,11 @@ export default function HomePage() {
       <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-6 max-w-3xl flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold mb-6 text-slate-900">
-            DOW SkillBridge Partner
+            DoW SkillBridge Partner
           </h2>
           <Image
             src="/dowskillbridge-logo.png"
-            alt="DOW SkillBridge"
+            alt="DoW SkillBridge"
             width={400}
             height={130}
             className="w-64 h-auto mb-6"
@@ -114,7 +114,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="underline hover:text-slate-900 transition"
             >
-              DoD SkillBridge program
+              DoW SkillBridge program
             </Link>
             , providing transitioning service members hands-on training and
             career opportunities in engineering, IT, and program management
