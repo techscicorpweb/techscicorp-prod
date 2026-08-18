@@ -106,7 +106,8 @@ export default async function CareersPage() {
             height={100}
             className="mb-3"
           />
-          <p className="text-sm text-slate-500">E-Verify Participation Poster!</p>
+          <p className="text-sm text-slate-500">E-Verify Participation Poster</p>
+          <p classname="text-sm text-slate-500">Technology Science Corporation (TSC) is proud to be an Equal Opportunity Employer. Personnel decisions are made without regard to race, color, religion, creed, sex, sexual orientation, marital status, national origin, age, veteran status, disability, or any other protected class. All personnel decisions are based on position requirements, candidate qualifications and customer needs.<p>
         </div>
       </section>
 
