@@ -41,7 +41,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden bg-slate-100">
         {/* Responsive background image */}
         <Image
-          src="/home-banner.png"
+          src="/images/home-banner.jpg"
           alt=""
           fill
           priority
@@ -90,6 +90,28 @@ export default function HomePage() {
           >
             Contact Us
           </Link>
+        </div>
+      </section>
+
+      {/* DOW SkillBridge */}
+      <section className="py-20 bg-slate-100">
+        <div className="container mx-auto px-6 max-w-3xl flex flex-col items-center text-center">
+          <h2 className="text-3xl font-bold mb-6 text-slate-900">
+            DOW SkillBridge Partner
+          </h2>
+          <Image
+            src="/dowskillbridge-logo.png"
+            alt="DOW SkillBridge"
+            width={400}
+            height={130}
+            className="w-64 h-auto mb-6"
+          />
+          <p className="text-lg text-slate-700">
+            Technology Science Corporation proudly partners with the DoD
+            SkillBridge program, providing transitioning service members
+            hands-on training and career opportunities in engineering,
+            IT, and program management as they move into civilian careers.
+          </p>
         </div>
       </section>
     </main>
