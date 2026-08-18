@@ -101,14 +101,24 @@ export default function HomePage() {
           </h2>
           <Image
             src="/dowskillbridge-logo.png"
-            alt="DOW SkillBridge Partner"
+            alt="DOW SkillBridge"
             width={400}
             height={130}
             className="w-64 h-auto mb-6"
           />
           <p className="text-lg text-slate-700">
-            Technology Science Corporation proudly partners with the DoW
-            SkillBridge program. This program provides a unique opportunity for service members to gain valuable civilian work experience through specific industry training, apprenticeships, or internships during the last 180 days of service. DoW SkillBridge connects transitioning service members with industry partners in real-world job experiences.
+            Technology Science Corporation proudly partners with the{" "}
+            <Link
+              href="https://skillbridge.osd.mil/program-overview.htm"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline hover:text-slate-900 transition"
+            >
+              DoD SkillBridge program
+            </Link>
+            , providing transitioning service members hands-on training and
+            career opportunities in engineering, IT, and program management
+            as they move into civilian careers.
           </p>
         </div>
       </section>
