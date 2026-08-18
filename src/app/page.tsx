@@ -109,7 +109,7 @@ export default function HomePage() {
           <p className="text-lg text-slate-700">
             Technology Science Corporation proudly partners with the{" "}
             <Link
-              href="https://skillbridge.osd.mil/program-overview.htm"
+              href="https://www.skillbridge.mil/programoverview"
               target="_blank"
               rel="noopener noreferrer"
               className="underline hover:text-slate-900 transition"
