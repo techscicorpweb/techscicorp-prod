@@ -41,7 +41,7 @@ export default function HomePage() {
       <section className="relative py-24 overflow-hidden bg-slate-100">
         {/* Responsive background image */}
         <Image
-          src="/home-banner.jpg"
+          src="/home-banner.png"
           alt=""
           fill
           priority
