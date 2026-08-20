@@ -139,13 +139,15 @@ export default async function AboutPage() {
             {leadership.map((leader) => (
               <div key={leader._id} className="flex flex-col md:flex-row gap-8 items-start">
                 {leader.photo && (
-                  <Image
-                    src={urlFor(leader.photo).width(400).url()}
-                    alt={leader.name}
-                    width={220}
-                    height={220}
-                    className="object-cover shrink-0"
-                  />
+                  <div className="bg-white rounded-lg p-2 shrink-0">
+                    <Image
+                      src={urlFor(leader.photo).width(400).url()}
+                      alt={leader.name}
+                      width={220}
+                      height={220}
+                      className="object-cover"
+                    />
+                  </div>
                 )}
                 <div>
                   <h3 className="text-3xl font-bold text-white mb-2">{leader.name}</h3>
