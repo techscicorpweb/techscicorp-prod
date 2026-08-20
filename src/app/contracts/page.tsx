@@ -36,11 +36,8 @@ const contracts = [
     logo: "/gsa-mas-logo-plain.png",
     logoCaption: "GSA MAS Contract Holder 47QTCA25D007G (TSC-ITG2 JV, LLC)",
   },
-  
-  
-  
   {
-    title: "GSA OASIS+ Multiple Awards: TSC-SPTRMJV, LLC",
+    title: "GSA OASIS+ Multiple Awards: TSC-SPTRM JV, LLC",
     linkHref: null,
     period: "Contract Period: December 2024 – 5-Year Base with one 5-Year Option",
     details: [
@@ -54,9 +51,9 @@ const contracts = [
     logoCaption: "Awarded to Joint Venture TSC-SPTRM-JV LLC Multiple Awards",
   },
   {
-    title: "GSA 8(a) STARS III 47QTCB22D0521: TSC-ITG JV, LLC",
+    title: "GSA 8(a) STARS III: 47QTCB22D0521: TSC-ITG JV, LLC",
     linkHref: null,
-    period: "Contract Period: July 2, 2021 – July 1, 2026 with (1) 3-year option",
+    period: "Contract Period through July 1, 2029. Task orders awarded during extension may continue through July 1, 2034",
     details: [
       "DUNS Number: 117595346",
       "UEI: FUJTMURMUZZ8",
@@ -71,9 +68,9 @@ const contracts = [
     logoCaption: "Awarded to Joint Venture TSC-ITG JV 47QTCB22D0521",
   },
     {
-    title: "NASA SEWP VI TSC-ITG2 JV, LLC",
+    title: "NASA SEWP VI: TSC-ITG2 JV, LLC",
     linkHref: null,
-    period: "Contract Period:",
+    period: "Contract Period: July 10, 2026- July 9, 2036",
     details: [
       "UEI: WF73WKMVFAG3",
       "CAGE Code: 9XS17",
@@ -84,7 +81,7 @@ const contracts = [
       "POC: Thu Stubbs — tstubbs@techscicorp.com",
     ],
     logo: "/SEWP-VI-logo.png",
-    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV",
+    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV SEWP VI Contract #80TECH26D1522",
   },
 ];
 
