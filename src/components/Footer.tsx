@@ -97,12 +97,14 @@ export default function Footer() {
             <h3 className="text-xl font-bold mb-4">Contact Us</h3>
             <div className="space-y-1 text-slate-300">
               <p>Technology Science Corporation</p>
+              <p>11921 Freedom Drive, Suite 550</p>
+              <p>Reston, VA  20164</p>
               <p>
                 <a
-                  href="mailto:info@techscicorp.com"
+                  href="mailto:Info@TechSciCorp.com"
                   className="hover:text-white transition"
                 >
-                  info@techscicorp.com
+                  Info@TechSciCorp.com
                 </a>
               </p>
               <p>
