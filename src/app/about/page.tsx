@@ -44,24 +44,21 @@ export default async function AboutPage() {
   const leadership = await getLeadership();
 
   const corporateProfile = [
-    "SBA Certified 8(a), SDVOSB, EDWOSB",
+    "SDVOSB, EDWOSB",
     "ISO: 9001:2015 | 14001:2015",
     "GSA MAS: GS-35F-445GA",
     "GSA MAS: 47QTCA25D007G (TSC-ITG2 JV)",
     "GSA STARS III: 47QTCB22D0521 (TSC-ITG JV)",
-    "GSA OASIS+",
-    "SB: 47QRCA25DSF73, SDVOSB: 47QRCA25DV098, WOSB: 47QRCA25DW137, 8(a): 47QRCA25DA390 (TSC-SPTRM-JV)",
+    "GSA OASIS+ SB: 47QRCA25DSF73, SDVOSB: 47QRCA25DV098, WOSB: 47QRCA25DW137",
+    "NASA SEWP VI: 80TECH26D1522 (TSC-ITG2 JV)",
     "Contract Partnerships: ITES-3H & 3S, NASA SEWP V",
   ];
 
   const businessCategory = [
-    "SBA Certified 8(a) Small Disadvantaged Business (SDB)",
-    "Verified Service-Disabled Veteran-Owned Small Business (SDVOSB)",
-    "Economically Disadvantaged Women-Owned Small Business (EDWOSB)",
+    "SBA Certified: Verified Service-Disabled Veteran-Owned Small Business (SDVOSB)",
+    "SBA Certified: Economically Disadvantaged Women-Owned Small Business (EDWOSB)",
     "Minority Owned Small Business",
     "Small Disadvantage Business (SDB)",
-    "Local Disadvantaged Business Enterprise (LDBE) (May 2023)",
-    "8(a) Sole Source Pool",
   ];
 
   const NAICS = [
@@ -77,7 +74,7 @@ export default async function AboutPage() {
     "541990 – All Other Professional, Scientific, and Technical Services",
     "561210 - Facility Support Services",
     "561920 – Convention and Trade Show Organizers",
-    "611620 –  Sports and Recreation Instruction",
+    "611620 – Sports and Recreation Instruction",
   ];
 
   const Misc = [
@@ -89,7 +86,7 @@ export default async function AboutPage() {
       href: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
     },
     "ISO Certified (2025): 9001:2015 & 14001:2015",
-    "MWAA LDBE #: LD2014-0043-2017",
+    "Federal and DoW Cleared",
   ];
 
   const TSCITG2 = [
@@ -100,7 +97,7 @@ export default async function AboutPage() {
       href: "https://tsc-itg2.com/",
     },
     "ISO Certified (2025): 9001:2015 & 14001:2015",
-	"Clearances: DoD, DHS, and Federal Clearances",
+    "Federal and DoW Cleared",
   ];
   
 

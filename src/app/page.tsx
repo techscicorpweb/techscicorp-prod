@@ -61,9 +61,7 @@ export default function HomePage() {
             Mission-Focused. Technically Driven.
           </h2>
           <p className="text-lg text-slate-700 mb-8">
-            From program management to enterprise network operations, TSC
-            supports the agencies and organizations that keep critical
-            systems running.
+            From Program Management and Unified Communications to Enterprise Network Operations, TSC provides high-quality, creative IT service solutions and proven past performance to meet limited budgets and tight deadlines.
           </p>
           <Link
             href="/capabilities"
@@ -78,11 +76,10 @@ export default function HomePage() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-6 max-w-4xl text-center">
           <h2 className="text-4xl font-bold mb-6 text-slate-900">
-            Ready to Support Your Mission
+            Exceptional Commitment to Support Your Mission
           </h2>
           <p className="text-lg text-gray-600 mb-8">
-            Learn how Technology Science Corporation can help solve your most
-            complex technical challenges.
+            Learn how TSC’s customer service, responsiveness, and performance solve your most complex technical challenges.
           </p>
           <Link
             href="/contact"
@@ -97,7 +94,7 @@ export default function HomePage() {
       <section className="py-20 bg-slate-100">
         <div className="container mx-auto px-6 max-w-3xl flex flex-col items-center text-center">
           <h2 className="text-3xl font-bold mb-6 text-slate-900">
-            DoW SkillBridge Partner
+            Partner of Department of War Internship Program
           </h2>
           <Image
             src="/dowskillbridge-logo.png"
