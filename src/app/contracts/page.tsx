@@ -81,7 +81,9 @@ const contracts = [
       "POC: Thu Stubbs — tstubbs@techscicorp.com",
     ],
     logo: "/SEWP-VI-logo.png",
-    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV SEWP VI Contract #80TECH26D1522",
+    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV
+    <p>SEWP VI Contract #80TECH26D1522",
+    </p>
   },
 ];
 
