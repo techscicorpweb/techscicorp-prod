@@ -81,7 +81,9 @@ const contracts = [
       "POC: Thu Stubbs — tstubbs@techscicorp.com",
     ],
     logo: "/SEWP-VI-logo.png",
-    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV\nSEWP VI Contract #80TECH26D1522",
+    logoCaption: "Awarded to Joint Venture TSC-ITG2 JV
+    <p>SEWP VI Contract #80TECH26D1522",
+    </p>
   },
 ];
 
@@ -153,7 +155,7 @@ export default function ContractsPage() {
                   height={130}
                   className="mb-3"
                 />
-                <p className="text-sm text-gray-500 whitespace-pre-line">{contract.logoCaption}</p>
+                <p className="text-sm text-gray-500">{contract.logoCaption}</p>
               </div>
             </div>
           ))}
