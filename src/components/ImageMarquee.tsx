@@ -13,6 +13,9 @@ const marqueeImages = [
   { src: "/marq-PentagonFPA-logo.png", name: "Pentagon Force Protection Agency" },
   { src: "/marq-FairfaxCo-logo.png", name: "Fairfax County, VA" },
   { src: "/marq-MDGaming-logo.webp", name: "Maryland Gaming Commission" },
+  { src: "/marq-atf-logo.png", name: "Bureau of Alcohol, Tobacco, Firearms and Explosives" },
+  { src: "/marq-dha-logo.png", name: "Defense Health Agency" },
+  { src: "/marq-doj-logo.png", name: "Department of Justice" },
 ];
 
 export default function ImageMarquee() {
