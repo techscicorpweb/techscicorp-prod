@@ -24,6 +24,21 @@ const contracts = [
     logo: "/gsa-mas-logo.png",
     logoCaption: "GSA MAS Contract Holder GS-35F-445GA",
   },
+  
+   {
+    title: "GSA MAS: 47QTCA25D007G (TSC-ITG2 JV, LLC)",
+    linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
+    period: " ",
+    details: [
+      "SIN:  54151S Information Technology Professional Services",
+      "UIE:  WF73WKMVFAG3",
+    ],
+    logo: "/gsa-mas-logo-plain.png",
+    logoCaption: "GSA MAS Contract Holder 47QTCA25D007G (TSC-ITG2 JV, LLC)",
+  },
+  
+  
+  
   {
     title: "GSA OASIS+ Multiple Awards: TSC-SPTRMJV, LLC",
     linkHref: null,

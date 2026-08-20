@@ -59,17 +59,6 @@ const capabilities = [
       "Maintains a 99% SLA attainment across all contracts and continuous improvement",
     ],
   },
-  {
-    title: "Managed Print Services",
-    description: [
-      "Manage consumable acquisition",
-      "Identify potential constraints for better capacity and availability",
-      "Managing spend throughout the product lifecycle",
-      "Multivendor CAC Deployment and integration",
-      "Asset Management & HW Maintenance",
-      "​Printer utilization and Reporting",
-    ],
-  },
 ];
 export default function CapabilitiesPage() {
   return (
