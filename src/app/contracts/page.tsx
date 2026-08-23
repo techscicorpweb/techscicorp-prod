@@ -27,7 +27,7 @@ const contracts = [
   
    {
     title: "GSA MAS: 47QTCA25D007G (TSC-ITG2 JV, LLC)",
-    linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP",
+    linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
     period: "Contract Period through Mar 26, 2030",
     details: [
       "SIN:  54151S Information Technology Professional Services",
