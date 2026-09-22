@@ -7,7 +7,7 @@ const contracts = [
     linkHref: "https://www.gsaelibrary.gsa.gov/ElibMain/contractorInfo.do?contractNumber=GS-35F-445GA&contractorName=TECHNOLOGY+SCIENCE+CORP&executeQuery=YES",
     period: "Contract Period: June 2, 2017 – June 1, 2027",
     details: [
-      "SIN 54151S - Information Technology Professional Services***",
+      "SIN 54151S - Information Technology Professional Services",
       "Class D301 (DC01) IT AND TELECOM - Facility Operation Maintenance – Facility Management",
       "Class D302 (DA01) IT AND TELECOM - Systems Development",
       "Class D306 (DD01) IT AND TELECOM - Systems Analysis",
