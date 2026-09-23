@@ -15,18 +15,19 @@ export default function Navbar() {
         />
 
         <div className="flex gap-6">
-          <Link href="/.">Home
-          </Link>
-          <Link href="./about">About TSC
-          </Link>
-          <Link href="./capabilities">Capabilities
-          </Link>
-          <Link href="./contracts">Contracts
-          </Link>
-          <Link href="./careers">Careers
-          </Link>
-          <Link href="./contact">Contact Us
-          </Link>
+          <Link href="/">Home</Link>
+
+          <Link href="/about">About TSC</Link>
+
+          <Link href="/capabilities">Capabilities</Link>
+
+          <Link href="/contracts">Contracts</Link>
+
+          <Link href="/careers">Careers</Link>
+
+          <Link href="/philanthropy">Philanthropy</Link>
+
+          <Link href="/contact">Contact Us</Link>
         </div>
 
       </div>
