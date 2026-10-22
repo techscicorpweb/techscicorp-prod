@@ -41,9 +41,7 @@ export default function PrivacyPolicyPage() {
       <p>Phone: (800) 224-3137</p>
 
       <p className="mt-8">
-        This page informs you of our policies regarding the collection, use,
-        and disclosure of personal information received from users and visitors
-        of this website.
+       This page informs you of our policies regarding the collection, use and disclosure of Personal Information (Personal Information) we receive from users/visitors (Visitors) of the Site.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -51,46 +49,27 @@ export default function PrivacyPolicyPage() {
       </h2>
 
       <p className="mb-4">
-        We collect the domain name (but not the email address) of visitors to
-        our site, the email addresses of individuals who communicate with us,
-        aggregate information regarding pages visited, user-specific page access
-        information, and information voluntarily provided by visitors such as
-        survey responses, inquiries, requests for information, and site
-        registrations.
+        We collect: the domain name (but not the e-mail address) of Visitors to our Site, the e-mail addresses of those who communicate with us via e-mail, aggregate information on what pages Visitors access or visit, user-specific information on what pages Visitors access or visit, information volunteered by the Visitor, such as information requested, survey information, and/or site registrations.
       </p>
 
       <p className="mb-4">
-        We use this information solely to provide, maintain, and improve our
-        website and services. By using the site, you agree to the collection
-        and use of information in accordance with this policy.
+        We use this information only for providing and improving the Site. By using the Site, you agree to the collection and use of information in accordance with this policy.
       </p>
 
       <p>
-        When using our Contact Forms or Inquiry Pages, we may request personally
-        identifiable information including your name, company, title, email
-        address, and phone number. This information is not sold, shared, or
-        disclosed to other organizations and is used only for communication
-        between TSC and the visitor.
+        While using our Site, we may ask you to provide us with certain personally identifiable information through our Contact Forms or Inquiries Page that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, company, title, email address, and phone number.  This information is not sold, shared, or disclosed with any other organization, and is only used for communication purposes between TSC and the visitor.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Log Data</h2>
 
       <p>
-        Like many website operators, we collect information that your browser
-        sends whenever you visit our site. This may include your IP address,
-        browser type and version, pages visited, date and time of access, time
-        spent on pages, and other usage statistics.
+		Like many site operators, we collect information that your browser sends whenever you visit our Site. This Log Data may include information such as your computer's Internet Protocol ("IP") address, browser type, browser version, the pages of our Site that you visit, the time and date of your visit, and the time spent on those pages and other statistics.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Cookies</h2>
 
       <p>
-        Cookies are small files that may include an anonymous unique identifier.
-        They are sent to your browser and stored on your device. We use cookies
-        to collect information and improve the functionality of our website.
-        You may configure your browser to refuse cookies or alert you when a
-        cookie is being sent. However, certain portions of the site may not
-        function properly if cookies are disabled.
+        Cookies are files with a small amount of data, which may include an anonymous unique identifier. Cookies are sent to your browser from a website and stored on your computer's hard drive. Like many sites, we use "cookies" to collect information. You can instruct your browser to refuse all cookies or to indicate when a cookie is being sent. However, if you do not accept cookies, you may not be able to use some portions of our Site.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -98,11 +77,7 @@ export default function PrivacyPolicyPage() {
       </h2>
 
       <p>
-        Our website may include links to external websites whose privacy
-        practices differ from those of TSC. If you submit personal information
-        to a third-party website, that information is governed by the privacy
-        policy of that website. We encourage you to review the privacy policies
-        of all websites you visit.
+        Our Site may include links to other websites whose privacy practices may differ from those of TSC. If you submit personal information to any of those sites, your information is governed by their privacy policies. We encourage you to carefully read the privacy policy of any website you visit.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -110,12 +85,7 @@ export default function PrivacyPolicyPage() {
       </h2>
 
       <p>
-        Our site may include social media features such as Facebook widgets,
-        share buttons, or interactive mini-programs. These features may collect
-        your IP address, track pages visited, and use cookies to function
-        properly. Such features may be hosted by third parties or directly on
-        our site, and your interactions with them are governed by the privacy
-        policy of the company providing the feature.
+        Our Site may include Social Media (Features), such as Facebook Widgets, the Share button or interactive mini-programs that run on our site. These Features may collect your IP address, which page you are visiting on our site, and may set a cookie to enable the Feature to function properly. Social Media Features and Widgets are either hosted by a third party or hosted directly on our Site. Your interactions with these Features are governed by the privacy policy of the company providing it.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">
@@ -123,19 +93,11 @@ export default function PrivacyPolicyPage() {
       </h2>
 
       <p>
-        This site uses Vercel Analytics and Google Analytics to help analyze how
-        visitors use the site. These services use cookies to collect information
-        about website usage, including IP addresses. Information collected may
-        be transmitted to and stored on servers located in the United States.
+        This Site uses Vercel Analytics ("Vercel") and Google Analytics, a web analytics service provided by Google, Inc. ("Google"). Both Vercel and Google use "cookies", which are text files placed on your computer, to help the Site analyze how Visitors use the Site. The information generated by the cookie about your use of the Site (including your IP address) will be transmitted to and stored by Vercel and Google on servers in the United States.
       </p>
 
       <p>
-        Vercel and Google use this information to evaluate website usage,
-        compile reports on site activity, and provide related services. These
-        providers may disclose information if required by law or when processing
-        information on behalf of the site operator. By using this website, you
-        consent to the processing of data by these services as described in this
-        policy.
+        Vercel and Google will use this information for the purpose of evaluating your use of the Site, compiling reports on Site activity for Site operators and providing other services relating to Site activity and internet usage. Vercel and Google may also transfer this information to third parties where required to do so by law, or where such third parties process the information on Vercel and Google's behalf. Vercel and Google will not associate your IP address with any other data held by those services. You may refuse the use of cookies by selecting the appropriate settings on your browser; however, please note that if you do this, you may not be able to use the full functionality of this Site. By using this Site, you consent to the processing of data about you by Vercel and Google in the manner and for the purposes set out above.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Advertising</h2>
