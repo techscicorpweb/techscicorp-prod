@@ -105,4 +105,72 @@ export default function PrivacyPolicyPage() {
         of all websites you visit.
       </p>
 
-      <h2 
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Social Media Widgets
+      </h2>
+
+      <p>
+        Our site may include social media features such as Facebook widgets,
+        share buttons, or interactive mini-programs. These features may collect
+        your IP address, track pages visited, and use cookies to function
+        properly. Such features may be hosted by third parties or directly on
+        our site, and your interactions with them are governed by the privacy
+        policy of the company providing the feature.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Analytics Services
+      </h2>
+
+      <p>
+        This site uses Vercel Analytics and Google Analytics to help analyze how
+        visitors use the site. These services use cookies to collect information
+        about website usage, including IP addresses. Information collected may
+        be transmitted to and stored on servers located in the United States.
+      </p>
+
+      <p>
+        Vercel and Google use this information to evaluate website usage,
+        compile reports on site activity, and provide related services. These
+        providers may disclose information if required by law or when processing
+        information on behalf of the site operator. By using this website, you
+        consent to the processing of data by these services as described in this
+        policy.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">Advertising</h2>
+
+      <p>
+        We do not partner with, or maintain relationships with, advertising
+        server companies.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">Security</h2>
+
+      <p>
+        The security of your personal information is important to us. While we
+        strive to use commercially reasonable means to protect your information,
+        no method of transmission over the Internet or electronic storage is
+        completely secure. Therefore, we cannot guarantee absolute security.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">
+        Changes to This Privacy Policy
+      </h2>
+
+      <p>
+        Technology Science Corporation may update this Privacy Policy from time
+        to time. Any changes will be posted on this page. We encourage visitors
+        to review this Privacy Policy periodically to stay informed about how
+        we protect collected information.
+      </p>
+
+      <h2 className="text-2xl font-semibold mt-8 mb-4">Contact Us</h2>
+
+      <p>
+        If you have any questions regarding this Privacy Policy, please contact
+        us using the address, email, or phone number listed above.
+      </p>
+    </main>
+  );
+}
