@@ -1,3 +1,28 @@
 git add -A
 git commit -m "Comments"
 git push
+
+Day to Day Workflow:
+
+git checkout staging
+# make your changes
+git add .
+git commit -m "describe the change"
+git push
+
+Go Live from Stagin:
+
+git checkout main
+git pull origin main
+git merge staging
+git push
+git checkout staging
+
+
+.bat file to push into Production:
+@echo off
+set /p commitMsg="Commit Message: "
+git add -A
+git commit -m "%commitMsg%"
+git push
+pause
