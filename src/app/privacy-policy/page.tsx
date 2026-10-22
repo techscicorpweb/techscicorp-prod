@@ -57,7 +57,7 @@ export default function PrivacyPolicyPage() {
       </p>
 
       <p>
-        While using our Site, we may ask you to provide us with certain personally identifiable information through our Contact Forms or Inquiries Page that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, company, title, email address, and phone number.  This information is not sold, shared, or disclosed with any other organization, and is only used for communication purposes between TSC and the visitor.
+        While using our Site, we may ask you to provide us with certain personally identifiable information through our Contact Forms or Inquiries Page that can be used to contact or identify you. Personally identifiable information may include, but is not limited to, your name, company, title, email address, and phone number. This information is not sold, shared, or disclosed with any other organization, and is only used for communication purposes between TSC and the visitor.
       </p>
 
       <h2 className="text-2xl font-semibold mt-8 mb-4">Log Data</h2>
